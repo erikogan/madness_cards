@@ -1,0 +1,6 @@
+.rbenv-gemsets
+images/*
+fonts/*.ttf
+*.pdf
+*.fo
+*.docx
