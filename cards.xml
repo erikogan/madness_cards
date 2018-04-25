@@ -2,55 +2,94 @@
 <cards>
   <card duration="Short">
     <title>BEES!</title>
-    <description>You are swarmed by angry bees. You must run about frantically for the duration.</description>
-    <acting>Shout in terror and run out the nearest exit, screaming about bees.</acting>
+    <description>
+      You are swarmed by angry bees. You must run about frantically for the
+      duration.
+    </description>
+    <acting>
+      Shout in terror and run out the nearest exit, screaming about bees.
+    </acting>
   </card>
   <card duration="Short">
     <title>Stoned Out of Your Gourd</title>
-    <description>You have been turned to stone. You may not act for the duration, nor may you speak.</description>
+    <description>
+      You have been turned to stone. You may not act for the duration, nor may
+      you speak.
+    </description>
     <acting>Sit as still as possible without speaking for the duration.</acting>
   </card>
   <card duration="Long">
     <title>Slow Motion</title>
-    <description>You feel incredibly sluggish. Your movement speed is halved (Rounding down), and any bonus actions count as full actions.</description>
+    <description>
+      You feel incredibly sluggish. Your movement speed is halved (round down),
+      and any bonus actions count as full actions.
+    </description>
     <acting>Talk to your party VERY slowly.</acting>
   </card>
   <card duration="Long">
     <title>Two Heads Are Not Better</title>
-    <description>You have sprouted a second head. It will disagree with you and contradict your every thought. Change your mind on every decision.</description>
+    <description>
+      You have sprouted a second head. It will disagree with you and contradict
+      your every thought. Change your mind on every decision.
+    </description>
   </card>
   <card duration="Long">
-    <title>Which end goes in the enemy?</title>
+    <title>Which End Goes in the Enemy?</title>
     <description>Do not add your proficiency bonus to any rolls.</description>
     <acting>Act exceptionally clumsy.</acting>
   </card>
   <card duration="Indefinite">
     <title>Master of the Universe</title>
-    <description>Everyone is your servant. Have them do what you don’t feel like doing. If they resist, ask them why you pay them at all.</description>
+    <description>
+      Everyone is your servant. Have them do what you don’t feel like doing. If
+      they resist, ask them why you pay them at all.
+    </description>
   </card>
   <card duration="Indefinite">
     <title>I’ll bite yer kneecaps off!</title>
-    <description>You feel rather inferior to your other companions. Always pick a fight with the biggest enemy to prove yourself.</description>
+    <description>
+      You feel rather inferior to your other companions. Always pick a fight
+      with the biggest enemy to prove yourself.
+  </description>
   </card>
   <card duration="Indefinite">
     <title>Ritual Madness</title>
-    <description>You’ve suddenly developed a rather strange habit. Every time you roll a die, do something strange. You must do the same action every time you roll.</description>
-    <acting>Sneeze loudly. Point at each die rolled 3 times. Scratch a body part in exactly the same place 5 times, counting loudly. Count up to, or down from, the number rolled. Check for your wallet.</acting>
+    <description>
+      You’ve suddenly developed a rather strange habit. Every time you roll a
+      die, do something strange. You must do the same action every time you
+      roll.
+    </description>
+    <acting>
+      Sneeze loudly. Point at each die rolled 3 times. Scratch a body part in
+      exactly the same place 5 times, counting loudly. Count up to, or down
+      from, the number rolled. Check for your wallet.
+    </acting>
   </card>
   <card duration="Long">
     <title>Bipolar Bear</title>
     <description>
-      <line>Sometimes you like to think things through. Other times… not so much.</line>
-      <line>Act Lawful for 1d10 minutes, then act Chaotic for 1d10 minutes. Repeat for one session.</line>
+      <line>
+        Sometimes you like to think things through. Other times… not so much.
+      </line>
+      <line>
+        Act Lawful for 1d10 minutes, then act Chaotic for 1d10 minutes. Repeat
+        for one session.
+      </line>
     </description>
   </card>
   <card duration="Indefinite">
     <title>Three-Ring Circus!</title>
-    <description>You’re the lead actor of a circus! Proclaim everything you’re about to do, as if you’re a ringmaster at a circus.</description>
+    <description>
+      You’re the lead actor of a circus! Proclaim everything you’re about to do,
+      as if you’re a ringmaster at a circus.
+    </description>
   </card>
   <card duration="Long" enabled="false">
     <title>Goodnight!</title>
-    <description>You fall unconscious for the duration. No amount of jostling or damage can wake you.</description>
+    <description>
+      You fall unconscious for the duration. No amount of jostling or damage can
+      wake you.
+    </description>
   </card>
   <card duration="Indefinite">
     <title>Safety at the Bottom of a Bottle</title>
@@ -59,105 +98,177 @@
   </card>
   <card duration="Indefinite">
     <title>Five-Finger Discount</title>
-    <description>If you pick something up, do not give it to your companions. Take any loot that drops. Try and take random items from your friends. Give them back at the end of the session if it is not noticed.</description>
+    <description>
+      If you pick something up, do not give it to your companions. Take any loot
+      that drops.
+    </description>
+    <acting>
+      Try and take random items from your friends. Give them back at the end of
+      the session if it is not noticed.
+    </acting>
   </card>
   <card duration="Indefinite">
     <title>Little Sibling Syndrome</title>
-    <description>Pick a character in the party. Your character must act like them.</description>
+    <description>
+      Pick a character in the party. Your character must act like them.
+    </description>
     <acting>Behave like the player who belongs to that character.</acting>
   </card>
   <card duration="Indefinite">
     <title>I’m only interesting if I tell tall tales.</title>
-    <description>Bend the truth, exaggerate, or lie about everything.Exaggerate everything at the table, tell tall tales.</description>
+    <description>
+      Bend the truth, exaggerate, or lie about everything.Exaggerate everything
+      at the table, tell tall tales.
+    </description>
   </card>
   <card duration="Indefinite">
     <title>My goal is all that matters.</title>
-    <description>Endlessly pursue your personal goals regardless of anything else going on, or your party’s desires. This may require going alone.</description>
+    <description>
+      Endlessly pursue your personal goals regardless of anything else going on,
+      or your party’s desires. This may require going alone.
+    </description>
   </card>
   <card duration="Indefinite">
     <title>Who cares?</title>
-    <description>Don’t act interested in anything going on around you.</description>
+    <description>
+      Don’t act interested in anything going on around you.
+    </description>
   </card>
   <card duration="Indefinite">
     <title>My dad owns a dealership!</title>
-    <description>Everyone is silently judging your actions. Accuse them of it!</description>
+    <description>
+      Everyone is silently judging your actions. Accuse them of it!
+    </description>
   </card>
   <card duration="Indefinite">
     <title>“I am so beautiful … to me! Can’t you see?”</title>
-    <description>You’re the smartest, strongest, fastest, and most beautiful person you’ve ever known.</description>
+    <description>
+      You’re the smartest, strongest, fastest, and most beautiful person you’ve
+      ever known.
+    </description>
   </card>
   <card duration="Indefinite">
     <title>They’re everywhere, and they’re coming for me!</title>
-    <description>There are foes chasing you everywhere you go, and they are watching you.</description>
+    <description>
+      There are foes chasing you everywhere you go, and they are watching you.
+    </description>
   </card>
   <card duration="Long">
     <title>Just keep swimming, just keep swimming…</title>
-    <description>You are compelled to repeat a specific activity over and over.</description>
+    <description>
+      You are compelled to repeat a specific activity over and over.
+    </description>
     <acting>Repeat a task out-of-game.</acting>
   </card>
   <card duration="Long">
     <title>LOOK! A flying monkey!</title>
-    <description>You experience vivid hallucinations for the duration, and have disadvantage on ability checks.</description>
+    <description>
+      You experience vivid hallucinations for the duration, and have
+      disadvantage on ability checks.
+    </description>
     <acting>Point out strange sightings to your companions.</acting>
   </card>
   <card duration="Long">
     <title>Jet fuel can’t melt steel beams.</title>
-    <description>You suffer extreme paranoia, and have disadvantage on Wisdom and Charisma checks.</description>
+    <description>
+      You suffer extreme paranoia, and have disadvantage on Wisdom and Charisma
+      checks.
+    </description>
   </card>
   <card duration="Long">
     <title>Disgusting! Keep that away!</title>
-    <description>You find something (of your choice, usually the source of your madness) incredibly revolting, as if affected by the Antipathy spell.</description>
+    <description>
+      You find something (of your choice, usually the source of your madness)
+      incredibly revolting, as if affected by the Antipathy spell.
+    </description>
   </card>
   <card duration="Long">
-    <title>My skin is made of stone! My flesh rapidly heals! I am unstoppable!</title>
-    <description>You experience a powerful delusion. Ask your DM for a potion name (Discreetly!). You must act as if you are under the effects of that potion.</description>
+    <title>
+      My skin is made of stone! My flesh rapidly heals! I am unstoppable!
+    </title>
+    <description>
+      You experience a powerful delusion. Ask your DM for a potion name
+      (Discreetly!). You must act as if you are under the effects of that
+      potion.
+    </description>
   </card>
   <card duration="Long">
     <title>My, this must be lucky!</title>
-    <description>You become attached to a non-combat item of your choice. You suffer disadvantage on attack rolls, ability checks, and saving throws when over 30ft away from it.</description>
+    <description>
+      You become attached to a non-combat item of your choice. You suffer
+      disadvantage on attack rolls, ability checks, and saving throws when over
+      30' away from it.
+    </description>
     <acting>Bring an item everywhere with you.</acting>
   </card>
   <card duration="Long">
     <title>I CAN’T HEAR! I CAN’T SEE! (I want to be a referee!)</title>
-    <description>Roll a d4. On a 1, you are blinded. Any other roll, you are deafened.</description>
-    <acting>If you are blinded, close your eyes and play blind! If you are deafened, don’t listen to anyone other than the DM.</acting>
+    <description>
+      Roll a d4. On a 1, you are blinded. Any other roll, you are deafened.
+    </description>
+    <acting>
+      If you are blinded, close your eyes and play blind! If you are deafened,
+      don’t listen to anyone other than the DM.
+    </acting>
   </card>
   <card duration="Long">
-    <title>A Boy’s Best Friend Is His Mother</title>
-    <description>You suffer uncontrollable tremors or tics, which pose disadvantage on attack rolls, ability checks, and saving throws that involve Strength or Dexterity.</description>
+    <title>“A Boy’s Best Friend Is His Mother”</title>
+    <description>
+      You suffer uncontrollable tremors or tics, which pose disadvantage on
+      attack rolls, ability checks, and saving throws that involve Strength or
+      Dexterity.
+    </description>
     <acting>Twitch randomly out-of-game.</acting>
   </card>
   <card duration="Long">
     <title>Who are you? Who, who? Who, who?</title>
-    <description>You suffer from partial amnesia. You know who you are and retain racial traits and class features, but you don’t recognize other people or events prior to your madness.</description>
+    <description>
+      You suffer from partial amnesia. You know who you are and retain racial
+      traits and class features, but you don’t recognize other people or events
+      prior to your madness.
+    </description>
     <acting>Act like you do not know your friends.</acting>
   </card>
   <card duration="Long">
     <title>The Trouble With Mr. Bean</title>
     <description>You cannot speak.</description>
-    <acting>Resort to frustrated signs to get points across</acting>
+    <acting>
+      Resort to exaggerated facial expressions and frustrated signs to get
+      points across.
+    </acting>
   </card>
-  <card dureation="Indefinite">
+  <card duration="Indefinite">
     <title>His Name is Tyler Durden</title>
     <description>
       <line>There’s only one person I can trust, and only I can see them.</line>
-      <line>You have an imaginary friend! Communicate with them regularly and ask for their advice and opinion.</line>
+      <line>
+        You have an imaginary friend! Communicate with them regularly and ask
+        for their advice and opinion.
+    </line>
     </description>
   </card>
   <card duration="Indefinite">
     <title>This is hilarious!</title>
-    <description>You find it difficult to take anything serious. The more serious the situation, the funnier it is.</description>
+    <description>
+      You find it difficult to take anything seriously. The more serious the
+      situation, the funnier it is.
+    </description>
   </card>
   <card duration="Indefinite">
     <title>“Oh my God, it even has a watermark …”</title>
     <description>
       <line>I really like killing people.</line>
-      <line>Viciously mutilate your foes and their bodies. Attempt to kill your allies.</line>
+      <line>
+        Viciously mutilate your foes and their bodies. Attempt to kill your
+        allies.
+    </line>
     </description>
   </card>
   <card duration="Long">
     <title>Oh. I’m dead.</title>
-    <description>Act like a ghost. Try to pass through walls and scare people.</description>
+    <description>
+      Act like a ghost. Try to pass through walls and scare people.
+    </description>
   </card>
   <card duration="Long">
     <title>You’re the star!</title>
@@ -165,37 +276,65 @@
   </card>
   <card duration="Long">
     <title>The floor Is Lava.</title>
-    <description>Your character must attempt to avoid the ground, or hop up and down frantically.</description>
-    <acting>Don’t touch the floor! (Unless you need to use the restroom.)</acting>
+    <description>
+      Your character must attempt to avoid the ground, or hop up and down
+      frantically.
+    </description>
+    <acting>
+      Don’t touch the floor! (Unless you need to use the restroom. DM’s option
+      to award an Inspiration Point if you manage to make it to the restroom
+      without touching the floor.)
+    </acting>
   </card>
   <card duration="Long">
-    <title>Mimic everything the person to your left does. Your character must do the same. If you are doing something else, you may ignore this rule for that period, but your character may not.</title>
+    <title>Cut it out! Mmmmmmmoooommmmmm!</title>
+    <description>
+      Mimic everything the person to your left does. Your character must do the
+      same. If you are doing something else, you may ignore this rule for that
+      period, but your character may not.
+    </description>
   </card>
   <card duration="Short">
     <title>DEEP BREATHING</title>
-    <description>You must audibly breathe, taking deep breaths and deep exhales.</description>
+    <description>
+      You must audibly breathe, taking deep breaths and deep exhales.
+    </description>
   </card>
   <card duration="Short">
     <title>Is it safe to do that?</title>
-    <description>You must ask the DM for permission to do anything for the duration. </description>
+    <description>
+      You must ask the DM for permission to do anything for the duration.
+    </description>
   </card>
   <card duration="Long">
     <title>BANANA HAMMOCK!</title>
-    <description>You must shout a random word that you think of every 10 minutes. Lasts one session.</description>
+    <description>
+      You must shout a random word that you think of every 10 minutes. Lasts one
+      session.
+    </description>
   </card>
   <card duration="Short">
     <title>Drove downtown in the rain / 9:30 on a Tuesday Night</title>
-    <description>The outside world isn’t safe! Retreat within your mind for safety. You are paralyzed for the duration.</description>
+    <description>
+      The outside world isn’t safe! Retreat within your mind for safety. You are
+      paralyzed for the duration.
+    </description>
     <acting>Do not move for the duration.</acting>
   </card>
   <card duration="Short">
     <title>That’s HILARIOUS!</title>
-    <description>You must keep laughing (At least when acknowledged) for the duration. During this time you are incapacitated.</description>
+    <description>
+      You must keep laughing (At least when acknowledged) for the duration.
+      During this time you are incapacitated.
+    </description>
   </card>
   <card duration="Short">
     <title>Zoiks!</title>
     <description>
-      <line>You’re terrified of demons. And spiders. And people. And that rock over there.</line>
+      <line>
+        You’re terrified of demons. And spiders. And people. And that rock over
+        there.
+      </line>
       <line>Pretty much everything.</line>
       <line>You are Frightened for the duration.</line>
     </description>
@@ -204,29 +343,51 @@
   <card duration="Short">
     <title>Ĉu vi povas kompreni min?</title>
     <description>
-      <line>What language did you speak? You forget. Time to make a new language.</line>
-      <line>You are incapable of normal speech (and thus spellcasting) for the duration, and only babble incoherently.</line>
+      <line>
+        What language did you speak? You’ve forgotten. Time to make a new
+        language.
+      </line>
+      <line>
+        You are incapable of normal speech (and thus spellcasting) for the
+        duration, and only babble incoherently.
+    </line>
     </description>
   </card>
   <card duration="Short">
     <title>Enemies are all around you! It’s not safe!</title>
-    <description>Attack the nearest creature, friend or foe (choose randomly if more than one creature qualifies) each round for the duration.</description>
+    <description>
+      Attack the nearest creature, friend or foe (choose randomly if more than
+      one creature qualifies) each round for the duration.
+    </description>
     <acting>Pretend your friends are monsters or evil villains.</acting>
   </card>
   <card duration="Short">
     <title>LOOK! A flying monkey!</title>
-    <description>You experience vivid hallucinations for the duration, and have disadvantage on ability checks.</description>
+    <description>
+      You experience vivid hallucinations for the duration, and have
+      disadvantage on ability checks.
+    </description>
     <acting>Point out strange sightings to your companions.</acting>
   </card>
   <card duration="Short">
     <title>Everybody’s ideas sound like good ideas. What could go wrong?</title>
-    <description>You will do whatever anyone tells you that isn’t obviously self-destructive for the duration.</description>
-    <acting>Do what you are told out-of-game as well, as long as it’s not harmful.</acting>
+    <description>
+      You will do whatever anyone tells you that isn’t obviously self-
+      destructive for the duration.
+    </description>
+    <acting>
+      Do what you are told out-of-game as well, as long as it’s not harmful.
+    </acting>
   </card>
   <card duration="Short">
     <title>That looks rather tasty…</title>
-    <description>You want to eat something strange, such as dirt or slime for the duration.</description>
-    <acting>Ask the player next to you if you can eat their pencil, or dice.</acting>
+    <description>
+      You want to eat something strange, such as dirt or slime for the duration.
+    </description>
+    <acting>
+      Ask the player next to you if you can eat their pencil, or dice, or
+      character sheet.
+    </acting>
   </card>
   <card duration="Short">
     <title>Goodnight!</title>
@@ -236,8 +397,14 @@
   <card duration="Indefinite">
     <title>You Know the One. It Sounds Like Truncheons &amp; Flagons</title>
     <description>
-      <line>We are just pawns in a game of giants! They leave our fates up to the dice! Look above you! Do you not see them?</line>
-      <line>You are convinced that this is just a tabletop game played by giant people.</line>
+      <line>
+        We are just pawns in a game of giants! They leave our fates up to the
+        dice! Look above you! Do you not see them?
+      </line>
+      <line>
+        You are convinced that this is just a tabletop game played by giant
+        people.
+      </line>
     </description>
   </card>
 </cards>
