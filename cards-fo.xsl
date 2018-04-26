@@ -25,7 +25,7 @@
 
       <fo:page-sequence master-reference="deck" initial-page-number="1" language="en" country="US">
         <fo:flow flow-name="xsl-region-body">
-          <xsl:apply-templates/>
+          <xsl:apply-templates select="cards/card[not(@enabled) or @enabled != 'false']" />
         </fo:flow>
       </fo:page-sequence>
     </fo:root>
