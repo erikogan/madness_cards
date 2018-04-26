@@ -46,7 +46,7 @@
     </description>
   </card>
   <card duration="Indefinite">
-    <title>I’ll bite yer kneecaps off!</title>
+    <title>I’ll Bite Yer Kneecaps Off!</title>
     <description>
       You feel rather inferior to your other companions. Always pick a fight
       with the biggest enemy to prove yourself.
@@ -115,27 +115,27 @@
     <acting>Behave like the player who belongs to that character.</acting>
   </card>
   <card duration="Indefinite">
-    <title>I’m only interesting if I tell tall tales.</title>
+    <title>I’m Only Interesting If I Tell Tall Tales</title>
     <description>
       Bend the truth, exaggerate, or lie about everything.Exaggerate everything
       at the table, tell tall tales.
     </description>
   </card>
   <card duration="Indefinite">
-    <title>My goal is all that matters.</title>
+    <title>My Goal Is All That Matters</title>
     <description>
       Endlessly pursue your personal goals regardless of anything else going on,
       or your party’s desires. This may require going alone.
     </description>
   </card>
   <card duration="Indefinite">
-    <title>Who cares?</title>
+    <title>Who Cares?</title>
     <description>
       Don’t act interested in anything going on around you.
     </description>
   </card>
   <card duration="Indefinite">
-    <title>My dad owns a dealership!</title>
+    <title>My Dad Owns A Dealership!</title>
     <description>
       Everyone is silently judging your actions. Accuse them of it!
     </description>
@@ -148,7 +148,7 @@
     </description>
   </card>
   <card duration="Indefinite">
-    <title>They’re everywhere, and they’re coming for me!</title>
+    <title>They’re Everywhere, and They’re Coming for Me!</title>
     <description>
       There are foes chasing you everywhere you go, and they are watching you.
     </description>
@@ -161,7 +161,7 @@
     <acting>Repeat a task out-of-game.</acting>
   </card>
   <card duration="Long">
-    <title>LOOK! A flying monkey!</title>
+    <title>LOOK! A Flying Monkey!</title>
     <description>
       You experience vivid hallucinations for the duration, and have
       disadvantage on ability checks.
@@ -169,14 +169,14 @@
     <acting>Point out strange sightings to your companions.</acting>
   </card>
   <card duration="Long">
-    <title>Jet fuel can’t melt steel beams.</title>
+    <title>Jet Fuel Can’t Melt Steel Beams</title>
     <description>
       You suffer extreme paranoia, and have disadvantage on Wisdom and Charisma
       checks.
     </description>
   </card>
   <card duration="Long">
-    <title>Disgusting! Keep that away!</title>
+    <title>Disgusting! Keep That Away!</title>
     <description>
       You find something (of your choice, usually the source of your madness)
       incredibly revolting, as if affected by the Antipathy spell.
@@ -193,7 +193,7 @@
     </description>
   </card>
   <card duration="Long">
-    <title>My, this must be lucky!</title>
+    <title>My, This Must Be Lucky!</title>
     <description>
       You become attached to a non-combat item of your choice. You suffer
       disadvantage on attack rolls, ability checks, and saving throws when over
@@ -248,7 +248,7 @@
     </description>
   </card>
   <card duration="Indefinite">
-    <title>This is hilarious!</title>
+    <title>This Is Hilarious!</title>
     <description>
       You find it difficult to take anything seriously. The more serious the
       situation, the funnier it is.
@@ -265,17 +265,17 @@
     </description>
   </card>
   <card duration="Long">
-    <title>Oh. I’m dead.</title>
+    <title>Oh. I’m Dead</title>
     <description>
       Act like a ghost. Try to pass through walls and scare people.
     </description>
   </card>
   <card duration="Long">
-    <title>You’re the star!</title>
+    <title>You’re the Star!</title>
     <description>Sing anything you say.</description>
   </card>
   <card duration="Long">
-    <title>The floor Is Lava.</title>
+    <title>The Floor Is Lava</title>
     <description>
       Your character must attempt to avoid the ground, or hop up and down
       frantically.
@@ -287,7 +287,7 @@
     </acting>
   </card>
   <card duration="Long">
-    <title>Cut it out! Mmmmmmmoooommmmmm!</title>
+    <title>Cut It Out! Mmmmmmmoooommmmmm!</title>
     <description>
       Mimic everything the person to your left does. Your character must do the
       same. If you are doing something else, you may ignore this rule for that
@@ -301,7 +301,7 @@
     </description>
   </card>
   <card duration="Short">
-    <title>Is it safe to do that?</title>
+    <title>Is It Safe to Do That?</title>
     <description>
       You must ask the DM for permission to do anything for the duration.
     </description>
@@ -341,7 +341,7 @@
     <acting>Jump in fear (Maybe shout too!) if someone acknowledges you.</acting>
   </card>
   <card duration="Short">
-    <title>Ĉu vi povas kompreni min?</title>
+    <title>Ĉu Vi Povas Kompreni Min?</title>
     <description>
       <line>
         What language did you speak? You’ve forgotten. Time to make a new
@@ -354,7 +354,7 @@
     </description>
   </card>
   <card duration="Short">
-    <title>Enemies are all around you! It’s not safe!</title>
+    <title>Enemies Are All Around! It’s Not Safe!</title>
     <description>
       Attack the nearest creature, friend or foe (choose randomly if more than
       one creature qualifies) each round for the duration.
@@ -362,7 +362,7 @@
     <acting>Pretend your friends are monsters or evil villains.</acting>
   </card>
   <card duration="Short">
-    <title>LOOK! A flying monkey!</title>
+    <title>LOOK! A Flying Monkey!</title>
     <description>
       You experience vivid hallucinations for the duration, and have
       disadvantage on ability checks.
@@ -370,7 +370,7 @@
     <acting>Point out strange sightings to your companions.</acting>
   </card>
   <card duration="Short">
-    <title>Everybody’s ideas sound like good ideas. What could go wrong?</title>
+    <title>Everybody’s Ideas Sound Like Good Ideas. What Could Go Wrong?</title>
     <description>
       You will do whatever anyone tells you that isn’t obviously self-
       destructive for the duration.
@@ -380,7 +380,7 @@
     </acting>
   </card>
   <card duration="Short">
-    <title>That looks rather tasty…</title>
+    <title>That Looks Rather Tasty…</title>
     <description>
       You want to eat something strange, such as dirt or slime for the duration.
     </description>
