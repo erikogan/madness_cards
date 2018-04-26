@@ -2,13 +2,39 @@
 <xsl:stylesheet version="1.0"
                 xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
                 xmlns:xsp="http://www.apache.org/1999/XSP/Core"
-                xmlns:fo="http://www.w3.org/1999/XSL/Format">
+                xmlns:fo="http://www.w3.org/1999/XSL/Format"
+                xmlns:dyn="http://exslt.org/dynamic"
+                extension-element-prefixes="dyn">
 
   <xsl:strip-space elements="*"/>
 
-  <xsl:param name="short-image">images/short.jpg</xsl:param><!-- https://cyliondraw.deviantart.com/art/Death-City-308883109 ©2012-2018 CylionDraw -->
-  <xsl:param name="long-image">images/long.png</xsl:param><!-- https://skyrawathi.deviantart.com/art/Devil-2-642641650 ©2016-2018 Skyrawathi -->
-  <xsl:param name="indefinite-image">images/indefinite.jpg</xsl:param><!-- https://m-delcambre.deviantart.com/art/Give-the-power-Cinematic-636055290 CC-A-NC-ND -->
+
+  <xsl:variable name="durations">
+    <duration name="Short">
+      <image src="/tmp/images/short.jpg"/>
+      <link href="https://cyliondraw.deviantart.com/art/Death-City-308883109"/>
+      <attribution>© 2012-2018 CylionDraw</attribution>
+      <color type="attribution">#ffffff</color>
+      <color type="text">#00cc00</color>
+      <text>1d10 rounds</text>
+    </duration>
+    <duration name="Long">
+      <image src="/tmp/images/long.png"/>
+      <link href="https://skyrawathi.deviantart.com/art/Devil-2-642641650"/>
+      <attribution>© 2016-2018 Skyrawathi</attribution>
+      <color type="attribution">#ffffff</color>
+      <color type="text">#00cccc</color>
+      <text>one session</text>
+    </duration>
+    <duration name="Indefinite">
+      <image src="/tmp/images/indefinite.jpg"/>
+      <link href="https://m-delcambre.deviantart.com/art/Give-the-power-Cinematic-636055290"/>
+      <attribution>(CC) M-Delcambre</attribution>
+      <color type="attribution">#ffffff</color>
+      <color type="text">#ff0000</color>
+      <text>until cured</text>
+    </duration>
+  </xsl:variable>
 
   <xsl:template match="/">
     <fo:root xmlns:fo="http://www.w3.org/1999/XSL/Format">
@@ -16,6 +42,7 @@
         <fo:simple-page-master master-name="master" page-height="3.5in" page-width="2.5in">
           <fo:region-body margin="0.25in" />
           <fo:region-before extent="3.5in" background-color="#000000"/>
+          <fo:region-after region-name="card-after" extent="20pt"/>
         </fo:simple-page-master>
 
         <fo:page-sequence-master master-name="deck">
@@ -24,6 +51,13 @@
       </fo:layout-master-set>
 
       <fo:page-sequence master-reference="deck" initial-page-number="1" language="en" country="US">
+        <fo:static-content flow-name="card-after">
+          <fo:block font-size="6pt" margin-right="0.25in" margin-bottom="0.125in" font-family="Cochin" text-align="end">
+            <fo:retrieve-marker retrieve-class-name="durationText"
+                      retrieve-position="first-including-carryover"
+                      retrieve-boundary="page"/>
+          </fo:block>
+        </fo:static-content>
         <fo:flow flow-name="xsl-region-body">
           <xsl:apply-templates select="cards/card[not(@enabled) or @enabled != 'false']" />
         </fo:flow>
@@ -32,20 +66,41 @@
   </xsl:template>
 
   <xsl:template match="card">
-    <fo:block page-break-before="always" font-size="10pt" color="#ff0000">
+    <fo:block page-break-before="always" font-size="10pt" font-family="Cochin" color="#ff0000">
+      <fo:marker marker-class-name="durationText">
+        <fo:block>
+          <xsl:attribute name="color">
+            <xsl:call-template name="duration-value">
+              <xsl:with-param name="duration" select="@duration"/>
+              <xsl:with-param name="path">color[@type = 'text']</xsl:with-param>
+            </xsl:call-template>
+          </xsl:attribute>
+          <xsl:text>Lasts </xsl:text>
+          <xsl:call-template name="duration-value">
+            <xsl:with-param name="duration" select="@duration"/>
+            <xsl:with-param name="path">text</xsl:with-param>
+          </xsl:call-template>
+        </fo:block>
+      </fo:marker>
       <fo:block>
         <fo:external-graphic content-width="2.0in">
           <xsl:attribute name="src">
-            <xsl:choose>
-              <xsl:when test="@duration = 'Indefinite'"><xsl:value-of select="$indefinite-image"/></xsl:when>
-              <xsl:when test="@duration = 'Long'"><xsl:value-of select="$long-image"/></xsl:when>
-              <xsl:otherwise><xsl:value-of select="$short-image"/></xsl:otherwise>
-            </xsl:choose>
+            <xsl:call-template name="duration-value">
+              <xsl:with-param name="duration" select="@duration"/>
+              <xsl:with-param name="path">image/@src</xsl:with-param>
+            </xsl:call-template>
           </xsl:attribute>
         </fo:external-graphic>
       </fo:block>
 
       <fo:block font-size="6pt" text-align="end">
+        <xsl:attribute name="color">
+          <xsl:call-template name="duration-value">
+            <xsl:with-param name="duration" select="@duration"/>
+            <xsl:with-param name="path">color[@type = 'text']</xsl:with-param>
+          </xsl:call-template>
+        </xsl:attribute>
+
         <xsl:value-of select="@duration" />
         <xsl:if test="@duration != 'Indefinite'">
           <xsl:text>-Term</xsl:text>
@@ -84,4 +139,10 @@
     </fo:block>
   </xsl:template>
 
+  <xsl:template name="duration-value">
+    <xsl:param name="duration"/>
+    <xsl:param name="path" />
+    <xsl:variable name="value-query">document('')//xsl:variable[@name='durations']/duration[@name = '<xsl:value-of select="$duration"/>']/<xsl:value-of select="$path"/></xsl:variable>
+    <xsl:value-of select="dyn:evaluate($value-query)"/>
+  </xsl:template>
 </xsl:stylesheet>
