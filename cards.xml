@@ -56,7 +56,7 @@
     <title>Ritual Madness</title>
     <description>
       You’ve suddenly developed a rather strange habit. Every time you roll a
-      die, do something strange. You must do the same action every time you
+      die, do something strange. You must perform the same action every time you
       roll.
     </description>
     <acting>
@@ -405,6 +405,65 @@
         You are convinced that this is just a tabletop game played by giant
         people.
       </line>
+    </description>
+  </card>
+  <!-- Mine -->
+  <card duration="Long">
+    <title>It Puts the Lotion on the Skin</title>
+    <description>
+      I keep trophies of my vanquished enemies and turn them into adornments.
+    </description>
+    <acting>
+      Keep dice that rolled well as trophies. Try to collect both yours and others.
+    </acting>
+  </card>
+  <card duration="Indefinite">
+    <title>A Nice Chianti</title>
+    <description>
+      The flesh of intelligent creatures is delicious! You feel an
+      overwhelming urge to eat them. Your enemies are the ideal meal, but your
+      compatriots will do in a pinch.
+    </description>
+    <acting>
+      How long can you go before the table realizes it’s a Hannibal impression?
+    </acting>
+  </card>
+  <card duration="Short">
+    <title>The Strange Eden of the Hyborian Age</title>
+    <description>
+      You degenerate into beastly behavior, seeming more like a wild animal
+      than a thinking being. You lose higher-order skills and abilities, and
+      are only able to make raw STR, DEX, and CON checks without proficiency.
+    </description>
+  </card>
+  <card duration="Indefinite">
+    <title>With a Halo of Singing Birds</title>
+    <description>
+      When you take damage, you must make a DC 15 Wisdom save, or suffer
+      effects similar to a Confusion spell, lasting 1 minute.
+    </description>
+    <acting>
+      When anyone touches you, your character sheet, dice, or any other
+      possessions, act disoriented and confused.
+    </acting>
+  </card>
+  <card duration="Short">
+    <title>They’re After Me Lucky Charms!</title>
+    <description>
+      Everyone wants to steal your belongings. You get violent if anyone
+      touches anything belonging to you.
+    </description>
+    <acting>
+      Accuse anyone who touches your stuff of trying to steal it. Be liberal
+      with the definition of “your stuff.”
+    </acting>
+  </card>
+  <card duration="Indefinite">
+    <title>(Wo)Man of La Mancha</title>
+    <description>
+      You are granted a vision showing you the way out your larger predicament
+      for you and your compatriots. Anyone who disagrees or says otherwise is
+      intentionally misleading you, and your new flock.
     </description>
   </card>
 </cards>
