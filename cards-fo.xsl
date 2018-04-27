@@ -40,6 +40,8 @@
   <xsl:variable name="rules-size">8pt</xsl:variable>
   <xsl:variable name="duration-size">6pt</xsl:variable>
 
+  <xsl:variable name="acting-image-source">/tmp/images/Comedy_and_tragedy_masks_without_background.svg</xsl:variable>
+
   <xsl:template match="/">
     <fo:root xmlns:fo="http://www.w3.org/1999/XSL/Format">
       <fo:layout-master-set>
@@ -132,7 +134,8 @@
 
   <xsl:template match="acting">
       <fo:block font-style="italic" margin-top="0.5em" font-size="{$rules-size}">
-        <xsl:text>Acting tip: </xsl:text>
+        <fo:external-graphic src="{$acting-image-source}" content-height="{$rules-size}" content-width="scale-to-fit"/>
+        <xsl:text> </xsl:text>
         <xsl:apply-templates />
       </fo:block>
   </xsl:template>
