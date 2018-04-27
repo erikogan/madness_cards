@@ -14,24 +14,24 @@
       <image src="/tmp/images/short.jpg"/>
       <link href="https://cyliondraw.deviantart.com/art/Death-City-308883109"/>
       <attribution>© 2012-2018 CylionDraw</attribution>
-      <color type="attribution">#ffffff</color>
-      <color type="text">#00cc00</color>
+      <color type="attribution">#18310f</color>
+      <color type="text">#356d21</color>
       <text>1d10 rounds</text>
     </duration>
     <duration name="Long">
       <image src="/tmp/images/long.png"/>
       <link href="https://skyrawathi.deviantart.com/art/Devil-2-642641650"/>
       <attribution>© 2016-2018 Skyrawathi</attribution>
-      <color type="attribution">#ffffff</color>
-      <color type="text">#00cccc</color>
+      <color type="attribution">#ab9873</color>
+      <color type="text">#b59a64</color>
       <text>one session</text>
     </duration>
     <duration name="Indefinite">
       <image src="/tmp/images/indefinite.jpg"/>
       <link href="https://m-delcambre.deviantart.com/art/Give-the-power-Cinematic-636055290"/>
-      <attribution>(CC) M-Delcambre</attribution>
+      <attribution>(CC BY-NC-ND) M-Delcambre</attribution>
       <color type="attribution">#ffffff</color>
-      <color type="text">#ff0000</color>
+      <color type="text">#b31b2e</color>
       <text>until cured</text>
     </duration>
   </xsl:variable>
