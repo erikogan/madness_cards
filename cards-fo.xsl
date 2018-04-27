@@ -36,6 +36,10 @@
     </duration>
   </xsl:variable>
 
+  <xsl:variable name="title-size">10pt</xsl:variable>
+  <xsl:variable name="rules-size">8pt</xsl:variable>
+  <xsl:variable name="duration-size">6pt</xsl:variable>
+
   <xsl:template match="/">
     <fo:root xmlns:fo="http://www.w3.org/1999/XSL/Format">
       <fo:layout-master-set>
@@ -52,7 +56,7 @@
 
       <fo:page-sequence master-reference="deck" initial-page-number="1" language="en" country="US">
         <fo:static-content flow-name="card-after">
-          <fo:block font-size="6pt" margin-right="0.25in" margin-bottom="0.125in" font-family="Cochin" text-align="end">
+          <fo:block font-size="{$duration-size}" margin-right="0.25in" margin-bottom="0.125in" font-family="Cochin" text-align="end">
             <fo:retrieve-marker retrieve-class-name="durationText"
                       retrieve-position="first-including-carryover"
                       retrieve-boundary="page"/>
@@ -66,7 +70,7 @@
   </xsl:template>
 
   <xsl:template match="card">
-    <fo:block page-break-before="always" font-size="10pt" font-family="Cochin" color="#ff0000">
+    <fo:block page-break-before="always" font-size="{$rules-size}" font-family="Cochin" color="#ff0000">
       <fo:marker marker-class-name="durationText">
         <fo:block>
           <xsl:attribute name="color">
@@ -93,7 +97,7 @@
         </fo:external-graphic>
       </fo:block>
 
-      <fo:block font-size="6pt" text-align="end">
+      <fo:block font-size="{$duration-size}" text-align="end">
         <xsl:attribute name="color">
           <xsl:call-template name="duration-value">
             <xsl:with-param name="duration" select="@duration"/>
@@ -115,19 +119,19 @@
   </xsl:template>
 
   <xsl:template match="title">
-    <fo:block font-weight="bold" margin-top="0.5em">
+    <fo:block font-weight="bold" margin-top="0.5em" font-size="{$title-size}">
       <xsl:apply-templates />
     </fo:block>
   </xsl:template>
 
   <xsl:template match="description">
-    <fo:block font-size="8pt">
+    <fo:block font-size="{$rules-size}">
       <xsl:apply-templates />
     </fo:block>
   </xsl:template>
 
   <xsl:template match="acting">
-      <fo:block font-style="italic" margin-top="0.5em" font-size="8pt">
+      <fo:block font-style="italic" margin-top="0.5em" font-size="{$rules-size}">
         <xsl:text>Acting tip: </xsl:text>
         <xsl:apply-templates />
       </fo:block>
