@@ -146,6 +146,18 @@
     </fo:block>
   </xsl:template>
 
+  <xsl:template match="acting//em">
+    <fo:inline font-style="normal" font-weight="bold"><!-- text-decoration="underline" -->
+      <xsl:apply-templates/>
+    </fo:inline>
+  </xsl:template>
+
+  <xsl:template match="em">
+    <fo:inline font-style="italic">
+      <xsl:apply-templates/>
+    </fo:inline>
+  </xsl:template>
+
   <xsl:template name="duration-value">
     <xsl:param name="duration"/>
     <xsl:param name="path" />

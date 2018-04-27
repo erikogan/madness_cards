@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <cards>
   <card duration="Short">
-    <title>BEES!</title>
+    <title><em>Bees!</em></title>
     <description>
       You are swarmed by angry bees. You must run about frantically for the
       duration.
@@ -24,7 +24,7 @@
       You feel incredibly sluggish. Your movement speed is halved (round down),
       and any bonus actions count as full actions.
     </description>
-    <acting>Talk to your party VERY slowly.</acting>
+    <acting>Talk to your party <em>very</em> slowly.</acting>
   </card>
   <card duration="Long">
     <title>Two Heads Are Not Better</title>
@@ -161,7 +161,7 @@
     <acting>Repeat a task out-of-game.</acting>
   </card>
   <card duration="Long">
-    <title>LOOK! A Flying Monkey!</title>
+    <title><em>Look!</em> A Flying Monkey!</title>
     <description>
       You experience vivid hallucinations for the duration, and have
       disadvantage on ability checks.
@@ -202,7 +202,7 @@
     <acting>Bring an item everywhere with you.</acting>
   </card>
   <card duration="Long">
-    <title>I CAN’T HEAR! I CAN’T SEE! (I want to be a referee!)</title>
+    <title><em>I Can’t Hear! I Can’t See!</em> (I want to be a referee!)</title>
     <description>
       Roll a d4. On a 1, you are blinded. Any other roll, you are deafened.
     </description>
@@ -295,7 +295,7 @@
     </description>
   </card>
   <card duration="Short">
-    <title>DEEP BREATHING</title>
+    <title><em>Deep Breathing</em></title>
     <description>
       You must audibly breathe, taking deep breaths and deep exhales.
     </description>
@@ -307,7 +307,7 @@
     </description>
   </card>
   <card duration="Long">
-    <title>BANANA HAMMOCK!</title>
+    <title><em>Banana Hammock!</em></title>
     <description>
       You must shout a random word that you think of every 10 minutes. Lasts one
       session.
@@ -322,7 +322,7 @@
     <acting>Do not move for the duration.</acting>
   </card>
   <card duration="Short">
-    <title>That’s HILARIOUS!</title>
+    <title>That’s <em>Hilarious!</em></title>
     <description>
       You must keep laughing (At least when acknowledged) for the duration.
       During this time you are incapacitated.
@@ -362,7 +362,7 @@
     <acting>Pretend your friends are monsters or evil villains.</acting>
   </card>
   <card duration="Short">
-    <title>LOOK! A Flying Monkey!</title>
+    <title><em>Look!</em> A Flying Monkey!</title>
     <description>
       You experience vivid hallucinations for the duration, and have
       disadvantage on ability checks.
