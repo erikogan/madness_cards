@@ -17,6 +17,7 @@
       <color type="attribution">#18310f</color>
       <color type="text">#356d21</color>
       <image type="title" src="/tmp/images/title-short.png"/>
+      <image type="duration-tab" src="/tmp/images/tab-short.png"/>
       <text>1d10 rounds</text>
     </duration>
     <duration name="Long">
@@ -26,6 +27,7 @@
       <color type="attribution">#ab9873</color>
       <color type="text">#b59a64</color>
       <image type="title" src="/tmp/images/title-long.png"/>
+      <image type="duration-tab" src="/tmp/images/tab-long.png"/>
       <text>one session</text>
     </duration>
     <duration name="Indefinite">
@@ -35,6 +37,7 @@
       <color type="attribution">#ffffff</color>
       <color type="text">#b31b2e</color>
       <image type="title" src="/tmp/images/title-indefinite.png"/>
+      <image type="duration-tab" src="/tmp/images/tab-indefinite.png"/>
       <text>until cured</text>
     </duration>
   </xsl:variable>
@@ -62,11 +65,9 @@
 
       <fo:page-sequence master-reference="deck" initial-page-number="1" language="en" country="US">
         <fo:static-content flow-name="card-after">
-          <fo:block font-size="{$duration-size}" margin-right="0.25in" margin-bottom="0.125in" font-family="Cochin" text-align="end">
-            <fo:retrieve-marker retrieve-class-name="durationText"
-                      retrieve-position="first-including-carryover"
-                      retrieve-boundary="page"/>
-          </fo:block>
+          <fo:retrieve-marker retrieve-class-name="durationTab"
+                    retrieve-position="first-including-carryover"
+                    retrieve-boundary="page"/>
         </fo:static-content>
         <fo:flow flow-name="xsl-region-body">
           <xsl:apply-templates select="cards/card[not(@enabled) or @enabled != 'false']" />
@@ -77,14 +78,30 @@
 
   <xsl:template match="card">
     <fo:block page-break-before="always" font-size="{$rules-size}" font-family="Cochin" color="#000000">
-      <fo:marker marker-class-name="durationText">
-        <fo:block>
+      <fo:marker marker-class-name="durationTab">
+        <fo:block padding="2pt" text-align="center"
+                  font-family="Cochin" font-size="{$duration-size}"
+                  background-repeat="no-repeat"
+                  background-position-horizontal="center">
+          <xsl:attribute name="background-image">
+            <xsl:call-template name="duration-value">
+              <xsl:with-param name="duration" select="@duration"/>
+              <xsl:with-param name="path">image[@type = 'duration-tab']/@src</xsl:with-param>
+            </xsl:call-template>
+          </xsl:attribute>
+          <xsl:attribute name="margin-top">
+            <xsl:choose>
+              <xsl:when test="acting">-12.25pt</xsl:when>
+              <xsl:otherwise>-13.25pt</xsl:otherwise>
+            </xsl:choose>
+          </xsl:attribute>
           <xsl:attribute name="color">
             <xsl:call-template name="duration-value">
               <xsl:with-param name="duration" select="@duration"/>
               <xsl:with-param name="path">color[@type = 'text']</xsl:with-param>
             </xsl:call-template>
           </xsl:attribute>
+
           <xsl:text>Lasts </xsl:text>
           <xsl:call-template name="duration-value">
             <xsl:with-param name="duration" select="@duration"/>
@@ -121,13 +138,23 @@
 
       <xsl:apply-templates select="title" />
 
-      <fo:block background-image="/tmp/images/paper_full.png"
-                background-repeat="no-repeat"
-                background-position-horizontal="center"
-                background-position-vertical="top">
+      <fo:block-container background-repeat="no-repeat"
+                          background-position-horizontal="center"
+                          background-position-vertical="top"
+                          height="1.55in">
+        <xsl:attribute name="background-image">
+          <xsl:choose>
+            <xsl:when test="acting">
+              /tmp/images/paper_full.png
+            </xsl:when>
+            <xsl:otherwise>
+              /tmp/images/parchment_full.png
+            </xsl:otherwise>
+          </xsl:choose>
+        </xsl:attribute>
         <xsl:apply-templates select="description" />
         <xsl:apply-templates select="acting" />
-      </fo:block>
+      </fo:block-container>
     </fo:block>
   </xsl:template>
 
@@ -152,10 +179,12 @@
 
   <xsl:template match="description" hyphenate="true">
     <fo:block font-size="{$rules-size}" padding-bottom="4pt"
-              background-image="/tmp/images/parchment_full.png"
               background-repeat="repeat-x"
               background-position-horizontal="center"
               background-position-vertical="bottom">
+      <xsl:attribute name="background-image">
+        <xsl:if test="../acting">/tmp/images/parchment_half.png</xsl:if>
+      </xsl:attribute>
       <fo:block margin="4pt">
         <xsl:apply-templates />
       </fo:block>
