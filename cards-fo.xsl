@@ -174,6 +174,9 @@
 
   <xsl:template match="line">
     <fo:block>
+      <xsl:if test="position() != 1">
+        <xsl:attribute name="space-before">4pt</xsl:attribute>
+      </xsl:if>
       <xsl:apply-templates />
     </fo:block>
   </xsl:template>
