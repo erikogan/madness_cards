@@ -61,7 +61,7 @@
   <xsl:template match="/">
     <fo:root xmlns:fo="http://www.w3.org/1999/XSL/Format">
       <fo:layout-master-set>
-        <fo:simple-page-master master-name="master" page-height="3.5in" page-width="2.5in">
+        <fo:simple-page-master master-name="master" page-height="88mm" page-width="63mm">
           <fo:region-body margin="0.25in" />
           <fo:region-before extent="3.5in" background-color="#000000"/>
           <fo:region-after region-name="card-after" extent="20pt"/>
@@ -100,8 +100,8 @@
           </xsl:attribute>
           <xsl:attribute name="margin-top">
             <xsl:choose>
-              <xsl:when test="acting">-12.25pt</xsl:when>
-              <xsl:otherwise>-13.25pt</xsl:otherwise>
+              <xsl:when test="acting">-11.25pt</xsl:when>
+              <xsl:otherwise>-12.25pt</xsl:otherwise>
             </xsl:choose>
           </xsl:attribute>
           <xsl:attribute name="color">
@@ -120,7 +120,7 @@
       </fo:marker>
 
       <fo:block>
-        <fo:external-graphic content-width="2.0in">
+        <fo:external-graphic content-width="50.3mm">
           <xsl:attribute name="src">
             <xsl:call-template name="duration-value">
               <xsl:with-param name="duration" select="@duration"/>
@@ -130,7 +130,7 @@
         </fo:external-graphic>
       </fo:block>
 
-      <fo:block font-size="{$duration-size}" text-align="end" margin-bottom="0pt" margin-top="-10pt" margin-right="4pt">
+      <fo:block font-size="{$duration-size}" text-align="end" margin-bottom="0pt" margin-top="-10.5pt" margin-right="4pt">
         <xsl:attribute name="color">
           <xsl:call-template name="duration-value">
             <xsl:with-param name="duration" select="@duration"/>
