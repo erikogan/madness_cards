@@ -150,12 +150,8 @@
                           height="1.55in">
         <xsl:attribute name="background-image">
           <xsl:choose>
-            <xsl:when test="acting">
-              /tmp/images/paper_full.png
-            </xsl:when>
-            <xsl:otherwise>
-              /tmp/images/parchment_full.png
-            </xsl:otherwise>
+            <xsl:when test="acting">/tmp/images/paper_full.png</xsl:when>
+            <xsl:otherwise>/tmp/images/parchment_full.png</xsl:otherwise>
           </xsl:choose>
         </xsl:attribute>
         <xsl:apply-templates select="description" />
@@ -204,13 +200,42 @@
   </xsl:template>
 
   <xsl:template match="acting" hyphenate="true">
-    <fo:block font-style="italic" font-size="{$rules-size}">
+    <fo:block font-style="italic" font-size="{$rules-size}" start-indent="11pt" text-indent="-11pt">
       <fo:block margin="4pt">
-        <fo:external-graphic src="{$acting-image-source}" content-height="{$rules-size}" content-width="scale-to-fit"/>
-        <xsl:text> </xsl:text>
-        <xsl:apply-templates />
+        <xsl:attribute name="margin-top">
+          <xsl:choose>
+            <xsl:when test="@tight">0pt</xsl:when>
+            <xsl:otherwise>4pt</xsl:otherwise>
+          </xsl:choose>
+        </xsl:attribute>
+
+        <xsl:choose>
+          <xsl:when test="line">
+            <xsl:apply-templates />
+          </xsl:when>
+          <xsl:otherwise>
+            <fo:external-graphic src="{$acting-image-source}" content-height="{$rules-size}" content-width="scale-to-fit"/>
+            <xsl:text> </xsl:text>
+            <xsl:apply-templates />
+          </xsl:otherwise>
+        </xsl:choose>
       </fo:block>
     </fo:block>
+  </xsl:template>
+
+  <xsl:template match="acting/line[position() = 1]">
+    <fo:block start-indent="11pt" text-indent="-11pt" margin-left="4pt">
+      <fo:external-graphic src="{$acting-image-source}" content-height="{$rules-size}" content-width="scale-to-fit"/>
+      <xsl:text> </xsl:text>
+      <xsl:apply-templates />
+    </fo:block>
+  </xsl:template>
+
+  <xsl:template match="acting/line[position() != 1]">
+    <fo:block space-before="6pt" text-indent="0pt" margin-left="4pt">
+      <xsl:apply-templates />
+    </fo:block>
+
   </xsl:template>
 
   <xsl:template match="line">
