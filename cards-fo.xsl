@@ -9,6 +9,9 @@
   <xsl:strip-space elements="*"/>
 
 
+<!-- Comedy/Tragedy attribution -->
+<!-- By Booyabazooka on English Wikipedia, he:משתמש:נעמה מ on Hebrew Wikipedia, edited by The Anome to remove background ellipse and balance positions of images within frame - Modified from <a href="//commons.wikimedia.org/wiki/File:Teatro.svg" title="File:Teatro.svg">Teatro.svg</a>:&nbsp;<a href="//commons.wikimedia.org/wiki/File:Teatro.svg" class="image"></a>, <a href="https://creativecommons.org/licenses/by-sa/3.0" title="Creative Commons Attribution-Share Alike 3.0">CC BY-SA 3.0</a>, <a href="https://commons.wikimedia.org/w/index.php?curid=54724150">Link</a> -->
+
   <xsl:variable name="durations">
     <duration name="Short">
       <image type="main" src="/tmp/images/short.jpg"/>
