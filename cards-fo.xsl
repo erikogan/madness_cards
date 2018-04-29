@@ -162,7 +162,14 @@
 
   <xsl:template match="title">
     <fo:block-container position="absolute" top="-4pt" left="-4pt">
-    <fo:block font-weight="bold" color="#ffffff" font-size="{$title-size}" margin-bottom="-10pt">
+    <fo:block font-weight="bold" margin-bottom="-10pt">
+      <xsl:attribute name="font-size">
+        <xsl:choose>
+          <xsl:when test="@shrink">7pt</xsl:when>
+          <xsl:otherwise><xsl:value-of select="$title-size"/></xsl:otherwise>
+        </xsl:choose>
+      </xsl:attribute>
+
       <fo:inline padding="1pt" padding-left="4pt" padding-right="6pt"
                  background-repeat="no-repeat"
                  background-position-horizontal="right"
@@ -232,7 +239,13 @@
   </xsl:template>
 
   <xsl:template match="acting/line[position() != 1]">
-    <fo:block space-before="6pt" text-indent="0pt" margin-left="4pt">
+    <fo:block text-indent="0pt" margin-left="4pt">
+      <xsl:attribute name="space-before">
+        <xsl:choose>
+          <xsl:when test="../@tight">4pt</xsl:when>
+          <xsl:otherwise>6pt</xsl:otherwise>
+        </xsl:choose>
+      </xsl:attribute>
       <xsl:apply-templates />
     </fo:block>
 
@@ -241,7 +254,12 @@
   <xsl:template match="line">
     <fo:block>
       <xsl:if test="position() != 1">
-        <xsl:attribute name="space-before">6pt</xsl:attribute>
+        <xsl:attribute name="space-before">
+          <xsl:choose>
+            <xsl:when test="../@tight">4pt</xsl:when>
+            <xsl:otherwise>6pt</xsl:otherwise>
+          </xsl:choose>
+        </xsl:attribute>
       </xsl:if>
       <xsl:apply-templates />
     </fo:block>

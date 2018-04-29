@@ -3,18 +3,24 @@
   <card duration="Short">
     <title><em>Bees!</em></title>
     <description>
-      You are swarmed by angry bees. You must run about frantically for the
-      duration.
+      You are swarmed by angry bees. You must run about frantically trying to
+      avoid them for the duration.
     </description>
     <acting>
-      Shout in terror and run out the nearest exit, screaming about bees.
+      Shout in terror and run out the nearest exit, screaming about bees. Refuse
+      to return until they’ve gone.
     </acting>
   </card>
   <card duration="Short">
     <title>Stoned Out of Your Gourd</title>
     <description>
-      You believe you have been turned to stone. You may not act for the
-      duration, nor may you speak.
+      <line>
+        You believe you have been turned to stone. You may not act for the
+        duration, nor may you speak.
+      </line>
+      <line>
+        On the positive side, you are immune to many types of damage.
+      </line>
     </description>
     <acting>Sit as still as possible without speaking for the duration.</acting>
   </card>
@@ -24,33 +30,47 @@
       You feel incredibly sluggish. Your movement speed is halved (round down),
       and any bonus actions count as full actions.
     </description>
-    <acting>Talk to your party <em>very</em> slowly.</acting>
+    <acting>
+      <line>Speak to your party <em>very</em> slowly.</line>
+      <line>Try to hold elaborate conversations.</line>
+    </acting>
   </card>
   <card duration="Long">
     <title>Two Heads Are Not Better</title>
     <description>
-      You have sprouted a second head. It will disagree with you and contradict
-      your every thought. Change your mind on every decision.
+      <line>
+        You have sprouted a second head. It will disagree with you and
+        contradict your every thought.
+      </line>
+      <line>Argue with it. Change your mind on every decision.</line>
     </description>
   </card>
   <card duration="Long">
-    <title>Which End Goes in the Enemy?</title>
-    <description>Do not add your proficiency bonus to any rolls.</description>
-    <acting>Act exceptionally clumsy.</acting>
+    <title>Which End Goes Toward the Enemy?</title>
+    <description>
+      <line>You are constantly distracted to the point of dissociation.</line>
+      <line>Do not add your proficiency bonus to any rolls.</line>
+    </description>
+    <acting>Act distracted and exceptionally clumsy.</acting>
   </card>
   <card duration="Indefinite">
     <title>Master of the Universe</title>
     <description>
-      Everyone is your servant. Have them do what you don’t feel like doing. If
-      they resist, ask them why you pay them at all.
+      <line>
+        Everyone is your servant. Have them do anything you don’t feel like
+        doing.
+      </line>
+      <line>
+        If they resist, ask them why you pay them at all.
+      </line>
     </description>
   </card>
   <card duration="Indefinite">
     <title>I’ll Bite Yer Kneecaps Off!</title>
     <description>
-      You feel rather inferior to your other companions. Always pick a fight
-      with the biggest enemy to prove yourself.
-  </description>
+      <line>You feel rather inferior to your other companions.</line>
+      <line>Always pick a fight with the biggest enemy to prove yourself.</line>
+    </description>
   </card>
   <card duration="Indefinite">
     <title>Ritual Madness</title>
@@ -59,14 +79,14 @@
       die, do something strange. You must perform the same action every time you
       roll.
     </description>
-    <acting>
+    <acting tight="true">
       Sneeze loudly. Point at each die rolled 3 times. Scratch a body part in
       exactly the same place 5 times, counting loudly. Count up to, or down
       from, the number rolled. Check for your wallet.
     </acting>
   </card>
   <card duration="Long">
-    <title>Bipolar Bear</title>
+    <title>Rapid Cycling</title>
     <description>
       <line>
         Sometimes you like to think things through. Other times… not so much.
@@ -80,8 +100,11 @@
   <card duration="Indefinite">
     <title>Three-Ring Circus!</title>
     <description>
-      You’re the lead actor of a circus! Proclaim everything you’re about to do,
-      as if you’re a ringmaster at a circus.
+      <line>You’re the lead actor of a circus!</line>
+      <line>
+        Proclaim everything you’re about to do, as if you’re a ringmaster at a
+        circus.
+      </line>
     </description>
   </card>
   <card duration="Long" enabled="false">
@@ -92,8 +115,15 @@
     </description>
   </card>
   <card duration="Indefinite">
-    <title>Safety at the Bottom of a Bottle</title>
-    <description>Your character drinks excessively.</description>
+    <title>Safety Found at the Bottom of a Bottle</title>
+    <description>
+      <line>Your character drinks excessively.</line>
+      <line>
+        To calm their nerves, to calm their shaking hands, to quiet the voices,
+        or to keep the nightmares at bay.
+      </line>
+      <line>Or any combination of those.</line>
+    </description>
     <acting>Act drunk out-of-game.</acting>
   </card>
   <card duration="Indefinite">
@@ -103,8 +133,8 @@
       that drops.
     </description>
     <acting>
-      Try to take random items from the other players. Give them back at the end of
-      the session if it is not noticed.
+      Try to take random items from the other players. Give them back at the end
+      of the session if it is not noticed.
     </acting>
   </card>
   <card duration="Indefinite">
@@ -117,44 +147,63 @@
   <card duration="Indefinite">
     <title>I’m Only Interesting If I Tell Tall Tales</title>
     <description>
-      Bend the truth, exaggerate, or lie about everything.Exaggerate everything
-      at the table, tell tall tales.
+      <line>Bend the truth, exaggerate, or lie about everything.</line>
+      <line>The more audacious the better.</line>
+      <line>You have no shame.</line>
     </description>
+    <acting>
+      Exaggerate everything at the table. Tell as many tall tales as you can.
+    </acting>
   </card>
   <card duration="Indefinite">
     <title>My Goal Is All That Matters</title>
     <description>
-      Endlessly pursue your personal goals regardless of anything else going on,
-      or your party’s desires. This may require going alone.
+      <line>
+        Endlessly pursue your personal goals regardless of anything else going
+        on, or your party’s desires.
+      </line>
+      <line>This may require going alone.</line>
     </description>
   </card>
   <card duration="Indefinite">
-    <title>Who Cares?</title>
+    <title>What Is the Point?</title>
     <description>
-      Don’t act interested in anything going on around you.
+      <line>
+        The color has drained from the world. None of your prior interests hold
+        any excitement. All of your efforts to are doomed to failure.
+      </line>
+      <line>
+        You have disadvantage on Charisma Ability Checks and Saving Throws.
+      </line>
     </description>
+    <acting tight="true">
+      Speak in a monotone, and appear disinterested in anything going on around
+      you.
+    </acting>
   </card>
   <card duration="Indefinite">
     <title>My Dad Owns A Dealership!</title>
     <description>
-      Everyone is silently judging your actions. Accuse them of it!
+      <line>Everyone is silently judging your actions.</line>
+      <line>Accuse them of it! Act upon it!</line>
+      <line>Why are they mocking you?</line>
     </description>
   </card>
   <card duration="Indefinite">
-    <title>“I am so beautiful … to me! Can’t you see?”</title>
+    <title shrink="true">I am so beautiful … to me! Can’t you see?</title>
     <description>
       You’re the smartest, strongest, fastest, and most beautiful person you’ve
       ever known.
     </description>
   </card>
   <card duration="Indefinite">
-    <title>They’re Everywhere, and They’re Coming for Me!</title>
+    <title>They’re Coming to Take Me Away!</title>
     <description>
       There are foes chasing you everywhere you go, and they are watching you.
     </description>
   </card>
   <card duration="Long">
-    <title>Just keep swimming, just keep swimming…</title>
+    <title shrink="true">Just keep swimming, just keep swimming…</title>
     <description>
       You are compelled to repeat a specific activity over and over.
     </description>
@@ -171,25 +220,32 @@
   <card duration="Long">
     <title>Jet Fuel Can’t Melt Steel Beams</title>
     <description>
-      You suffer extreme paranoia, and have disadvantage on Wisdom and Charisma
-      checks.
+      <line>
+        You suffer extreme paranoia, seeing conspiracies every where you turn.
+      </line>
+      <line>
+        You have disadvantage on Wisdom and Charisma Ability Checks and Saving
+        Throws.
+      </line>
     </description>
   </card>
   <card duration="Long">
     <title>Disgusting! Keep That Away!</title>
     <description>
-      You find something (of your choice, usually the source of your madness)
-      incredibly revolting, as if affected by the Antipathy spell.
+      You find something (of your choice, but usually the source of your
+      madness) incredibly revolting, as if affected by the Antipathy spell.
     </description>
   </card>
   <card duration="Long">
-    <title>
-      My skin is made of stone! My flesh rapidly heals! I am unstoppable!
+    <title shrink="true">
+      My skin is now stone! My flesh rapidly heals!
     </title>
     <description>
-      You experience a powerful delusion. Ask your DM for a potion name
-      (Discreetly!). You must act as if you are under the effects of that
-      potion.
+      <line>You experience a powerful delusion.</line>
+      <line>
+        Discreetly ask your DM for a potion name. You must act as if you are
+        under the effects of that potion.
+      </line>
     </description>
   </card>
   <card duration="Long">
@@ -199,10 +255,13 @@
       disadvantage on attack rolls, ability checks, and saving throws when over
       30' away from it.
     </description>
-    <acting>Bring an item everywhere with you.</acting>
+    <acting>
+      Bring a nonsensical item everywhere with you. Your chair might be a good
+      place to start.
+    </acting>
   </card>
   <card duration="Long">
-    <title><em>I Can’t Hear! I Can’t See!</em> (I want to be a referee!)</title>
+    <title>I Can’t Hear! I Can’t See!</title>
     <description>
       Roll a d4. On a 1, you are blinded. Any other roll, you are deafened.
     </description>
@@ -214,9 +273,15 @@
   <card duration="Long">
     <title>“A Boy’s Best Friend Is His Mother”</title>
     <description>
-      You suffer uncontrollable tremors or tics, which pose disadvantage on
-      attack rolls, ability checks, and saving throws that involve Strength or
-      Dexterity.
+      <line>
+        You suffer uncontrollable tremors or tics, which pose disadvantage on
+        attack rolls, ability checks, and saving throws that involve Strength or
+        Dexterity.
+      </line>
+      <line>
+        You must also make a Dexterity Saving Throw to cast a spell with
+        Somatic components.
+      </line>
     </description>
     <acting>Twitch randomly out-of-game.</acting>
   </card>
@@ -231,7 +296,10 @@
   </card>
   <card duration="Long">
     <title>The Trouble With Mr. Bean</title>
-    <description>You cannot speak.</description>
+    <description>
+      <line>You have lost your ability to speak.</line>
+      <line>This includes Verbal spell components</line>
+    </description>
     <acting>
       Resort to exaggerated facial expressions and frustrated signs to get
       points across.
@@ -240,7 +308,9 @@
   <card duration="Indefinite">
     <title>His Name is Tyler Durden</title>
     <description>
-      <line>There’s only one person I can trust, and only I can see them.</line>
+      <line>
+        There’s only one person you can trust, and only you can see them.
+      </line>
       <line>
         You have an imaginary friend! Communicate with them regularly and ask
         for their advice and opinion.
@@ -255,24 +325,39 @@
     </description>
   </card>
   <card duration="Indefinite">
-    <title>“Oh my God, it even has a watermark …”</title>
+    <title>Oh my God, It Even Has a Watermark</title>
     <description>
-      <line>I really like killing people.</line>
+      <line>
+        You really like killing people. And you have developed such a knack for
+        it.
+      </line>
       <line>
         Viciously mutilate your foes and their bodies. Attempt to kill your
         allies.
-    </line>
+      </line>
     </description>
+    <acting tight="true">
+      <line>
+        Profess your undying admiration for Huey Lewis and Phil Collins.
+      </line>
+      <line>
+        Admire the quality of that fine Chardonnay you’re not drinking
+      </line>
+    </acting>
   </card>
   <card duration="Long">
     <title>Oh. I’m Dead</title>
     <description>
-      Act like a ghost. Try to pass through walls and scare people.
+      <line>Act like a ghost.</line>
+      <line>Try to pass through walls and scare people.</line>
     </description>
   </card>
   <card duration="Long">
     <title>You’re the Star!</title>
-    <description>Sing anything you say.</description>
+    <description>
+      <line>Sing anything you say.</line>
+      <line>Every movement you make must be a grand, flourished gesture.</line>
+    </description>
   </card>
   <card duration="Long">
     <title>The Floor Is Lava</title>
@@ -287,34 +372,45 @@
     </acting>
   </card>
   <card duration="Long">
-    <title>Cut It Out! Mmmmmmmoooommmmmm!</title>
+    <title>Cut It Out! Mmmmmmoooommmmm!</title>
     <description>
-      Mimic everything the person to your left does. Your character must do the
-      same. If you are doing something else, you may ignore this rule for that
-      period, but your character may not.
+      You must mimic the person to your immediate left.
     </description>
+    <acting>
+      <line>Mimic everything the person to your left does.</line>
+      <line>
+        If you are doing something else, you may ignore this rule for that
+        period, but your character may not.
+      </line>
+    </acting>
   </card>
   <card duration="Short">
     <title><em>Deep Breathing</em></title>
     <description>
-      You must audibly breathe, taking deep breaths and deep exhales.
+      <line>You must audibly breathe, taking deep breaths and deep exhales.</line>
+      <line>
+        If you stop for any reason, the walls begin to close upon you. Make a
+        Constitution Saving Throw or suffer the effects of asphyxiation.
+      </line>
     </description>
   </card>
   <card duration="Short">
     <title>Is It Safe to Do That?</title>
     <description>
-      You must ask the DM for permission to do anything for the duration.
+      <line>
+        You must ask the DM for permission to do anything for the duration.
+      </line>
+      <line>Anything.</line>
     </description>
   </card>
   <card duration="Long">
     <title><em>Banana Hammock!</em></title>
     <description>
-      You must shout a random word that you think of every 10 minutes. Lasts one
-      session.
+      You must shout a random word that you think of every 10 minutes.
     </description>
   </card>
-  <card duration="Short">
-    <title>Drove downtown in the rain / 9:30 on a Tuesday Night</title>
+  <card duration="Short" shrink="true">
+    <title>Drove downtown in the rain …</title>
     <description>
       The outside world isn’t safe! Retreat within your mind for safety. You are
       paralyzed for the duration.
@@ -324,8 +420,10 @@
   <card duration="Short">
     <title>That’s <em>Hilarious!</em></title>
     <description>
-      You must keep laughing (At least when acknowledged) for the duration.
-      During this time you are incapacitated.
+      <line>
+        You must keep laughing (At least when acknowledged) for the duration.
+      </line>
+      <line>During this time you are incapacitated.</line>
     </description>
   </card>
   <card duration="Short">
@@ -338,7 +436,7 @@
       <line>Pretty much everything.</line>
       <line>You are Frightened for the duration.</line>
     </description>
-    <acting>Jump in fear (Maybe shout too!) if someone acknowledges you.</acting>
+    <acting>Jump in fear (and maybe shout too!) if someone acknowledges you.</acting>
   </card>
   <card duration="Short">
     <title>Ĉu Vi Povas Kompreni Min?</title>
@@ -348,9 +446,10 @@
         language.
       </line>
       <line>
-        You are incapable of normal speech (and thus spellcasting) for the
-        duration, and only babble incoherently.
-    </line>
+        You are incapable of normal speech (including casting spells that
+        require Verbal components) for the duration, and can only babble
+        incoherently.
+      </line>
     </description>
   </card>
   <card duration="Short">
@@ -370,7 +469,7 @@
     <acting>Point out strange sightings to your companions.</acting>
   </card>
   <card duration="Short">
-    <title>Everybody’s Ideas Sound Like Good Ideas. What Could Go Wrong?</title>
+    <title>You are Getting Sleepy …</title>
     <description>
       You will do whatever anyone tells you that isn’t obviously self-
       destructive for the duration.
@@ -390,13 +489,13 @@
       character sheet.
     </acting>
   </card>
-  <card duration="Short">
+  <card duration="Short" enabled="false">
     <title>Goodnight!</title>
     <description>You fall unconscious for the duration.</description>
     <acting>Slump over on the table, unresponsive.</acting>
   </card>
   <card duration="Indefinite">
-    <title>You Know the One. It Sounds Like Truncheons &amp; Flagons</title>
+    <title>It Sounds Like Truncheons &amp; Flagons</title>
     <description>
       <line>
         We are just pawns in a game of giants! They leave our fates up to the
@@ -412,7 +511,8 @@
   <card duration="Long">
     <title>It Puts the Lotion on the Skin</title>
     <description>
-      I keep trophies of my vanquished enemies and turn them into adornments.
+      You keep trophies of your vanquished enemies and turn them into
+      adornments.
     </description>
     <acting>
       Keep dice that rolled well as trophies. Try to collect both yours and others.
@@ -432,15 +532,16 @@
   <card duration="Short">
     <title>The Strange Eden of the Hyborian Age</title>
     <description>
-      You degenerate into beastly behavior, seeming more like a wild animal
-      than a thinking being. You lose higher-order skills and abilities, and
-      are only able to make raw STR, DEX, and CON checks without proficiency.
+      You degenerate into beastly behavior, seeming more like a wild animal than
+      a thinking being. You lose higher-order skills and abilities, and are only
+      able to make raw Strength, Dexterity, and Constitution checks without
+      proficiency.
     </description>
   </card>
   <card duration="Indefinite">
     <title>With a Halo of Singing Birds</title>
     <description>
-      When you take damage, you must make a DC 15 Wisdom save, or suffer
+      When you take damage, you must make a Wisdom Saving Throw, or suffer
       effects similar to a Confusion spell, lasting 1 minute.
     </description>
     <acting>
