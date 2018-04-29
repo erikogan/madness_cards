@@ -13,8 +13,8 @@
   <card duration="Short">
     <title>Stoned Out of Your Gourd</title>
     <description>
-      You have been turned to stone. You may not act for the duration, nor may
-      you speak.
+      You believe you have been turned to stone. You may not act for the
+      duration, nor may you speak.
     </description>
     <acting>Sit as still as possible without speaking for the duration.</acting>
   </card>
@@ -103,12 +103,12 @@
       that drops.
     </description>
     <acting>
-      Try and take random items from your friends. Give them back at the end of
+      Try to take random items from the other players. Give them back at the end of
       the session if it is not noticed.
     </acting>
   </card>
   <card duration="Indefinite">
-    <title>Little Sibling Syndrome</title>
+    <title>Younger Sibling Syndrome</title>
     <description>
       Pick a character in the party. Your character must act like them.
     </description>
@@ -227,7 +227,7 @@
       traits and class features, but you don’t recognize other people or events
       prior to your madness.
     </description>
-    <acting>Act like you do not know your friends.</acting>
+    <acting>Act like you do not know the other players.</acting>
   </card>
   <card duration="Long">
     <title>The Trouble With Mr. Bean</title>
@@ -359,7 +359,7 @@
       Attack the nearest creature, friend or foe (choose randomly if more than
       one creature qualifies) each round for the duration.
     </description>
-    <acting>Pretend your friends are monsters or evil villains.</acting>
+    <acting>Pretend the other players are monsters or evil villains.</acting>
   </card>
   <card duration="Short">
     <title><em>Look!</em> A Flying Monkey!</title>
@@ -382,7 +382,8 @@
   <card duration="Short">
     <title>That Looks Rather Tasty…</title>
     <description>
-      You want to eat something strange, such as dirt or slime for the duration.
+      For the duration, you have an all-consuming urge to eat something strange,
+      such as dirt or slime for the duration.
     </description>
     <acting>
       Ask the player next to you if you can eat their pencil, or dice, or
@@ -392,7 +393,7 @@
   <card duration="Short">
     <title>Goodnight!</title>
     <description>You fall unconscious for the duration.</description>
-    <acting>Slump over on the table unresponsive.</acting>
+    <acting>Slump over on the table, unresponsive.</acting>
   </card>
   <card duration="Indefinite">
     <title>You Know the One. It Sounds Like Truncheons &amp; Flagons</title>
