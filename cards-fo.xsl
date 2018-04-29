@@ -14,30 +14,36 @@
       <image type="main" src="/tmp/images/short.jpg"/>
       <link href="https://cyliondraw.deviantart.com/art/Death-City-308883109"/>
       <attribution>© 2012-2018 CylionDraw</attribution>
+      <color type="title">#b4d8a8</color>
+      <color type="type">#356d21</color>
+      <color type="duration">#b4d8a8</color>
       <color type="attribution">#18310f</color>
-      <color type="text">#356d21</color>
       <image type="title" src="/tmp/images/title-short.png"/>
-      <image type="duration-tab" src="/tmp/images/tab-short.png"/>
+      <image type="duration-tab" src="/tmp/images/tab-short.png"/><!-- this image has been vertically scaled to 1/6" from the source -->
       <text>1d10 rounds</text>
     </duration>
     <duration name="Long">
       <image type="main" src="/tmp/images/long.png"/>
       <link href="https://skyrawathi.deviantart.com/art/Devil-2-642641650"/>
       <attribution>© 2016-2018 Skyrawathi</attribution>
+      <color type="title">#d9caab</color>
+      <color type="type">#d9caab</color>
+      <color type="duration">#d9caab</color>
       <color type="attribution">#ab9873</color>
-      <color type="text">#b59a64</color>
       <image type="title" src="/tmp/images/title-long.png"/>
-      <image type="duration-tab" src="/tmp/images/tab-long.png"/>
+      <image type="duration-tab" src="/tmp/images/tab-long.png"/><!-- this image has been vertically scaled to 1/6" from the source -->
       <text>one session</text>
     </duration>
     <duration name="Indefinite">
       <image type="main" src="/tmp/images/indefinite.jpg"/>
       <link href="https://m-delcambre.deviantart.com/art/Give-the-power-Cinematic-636055290"/>
       <attribution>(CC BY-NC-ND) M-Delcambre</attribution>
+      <color type="title">#e8b0b7</color>
+      <color type="type">#b31b2e</color>
+      <color type="duration">#e8b0b7</color>
       <color type="attribution">#ffffff</color>
-      <color type="text">#b31b2e</color>
       <image type="title" src="/tmp/images/title-indefinite.png"/>
-      <image type="duration-tab" src="/tmp/images/tab-indefinite.png"/>
+      <image type="duration-tab" src="/tmp/images/tab-indefinite.png"/><!-- this image has been vertically scaled to 1/6" from the source -->
       <text>until cured</text>
     </duration>
   </xsl:variable>
@@ -98,7 +104,7 @@
           <xsl:attribute name="color">
             <xsl:call-template name="duration-value">
               <xsl:with-param name="duration" select="@duration"/>
-              <xsl:with-param name="path">color[@type = 'text']</xsl:with-param>
+              <xsl:with-param name="path">color[@type = 'duration']</xsl:with-param>
             </xsl:call-template>
           </xsl:attribute>
 
@@ -125,7 +131,7 @@
         <xsl:attribute name="color">
           <xsl:call-template name="duration-value">
             <xsl:with-param name="duration" select="@duration"/>
-            <xsl:with-param name="path">color[@type = 'text']</xsl:with-param>
+            <xsl:with-param name="path">color[@type = 'type']</xsl:with-param>
           </xsl:call-template>
         </xsl:attribute>
 
@@ -165,6 +171,12 @@
                  background-repeat="no-repeat"
                  background-position-horizontal="right"
                  background-position-vertical="top">
+        <xsl:attribute name="color">
+          <xsl:call-template name="duration-value">
+            <xsl:with-param name="duration" select="../@duration"/>
+            <xsl:with-param name="path">color[@type = 'title']</xsl:with-param>
+          </xsl:call-template>
+        </xsl:attribute>
         <xsl:attribute name="background-image">
           <xsl:call-template name="duration-value">
             <xsl:with-param name="duration" select="../@duration"/>
@@ -204,7 +216,7 @@
   <xsl:template match="line">
     <fo:block>
       <xsl:if test="position() != 1">
-        <xsl:attribute name="space-before">4pt</xsl:attribute>
+        <xsl:attribute name="space-before">6pt</xsl:attribute>
       </xsl:if>
       <xsl:apply-templates />
     </fo:block>
