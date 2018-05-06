@@ -16,7 +16,7 @@
     <duration name="Short">
       <image type="main" src="/tmp/images/short.jpg"/>
       <link href="https://cyliondraw.deviantart.com/art/Death-City-308883109"/>
-      <attribution>© 2012-2018 CylionDraw</attribution>
+      <attribution>Image: “Death City” © 2012-2018 CylionDraw</attribution>
       <color type="title">#b4d8a8</color>
       <color type="type">#66a150</color>
       <color type="duration">#b4d8a8</color>
@@ -28,7 +28,7 @@
     <duration name="Long">
       <image type="main" src="/tmp/images/long.png"/>
       <link href="https://skyrawathi.deviantart.com/art/Devil-2-642641650"/>
-      <attribution>© 2016-2018 Skyrawathi</attribution>
+      <attribution>Image: “Devil 2” © 2016-2018 Skyrawathi</attribution>
       <color type="title">#d9caab</color>
       <color type="type">#d9caab</color>
       <color type="duration">#d9caab</color>
@@ -40,11 +40,11 @@
     <duration name="Indefinite">
       <image type="main" src="/tmp/images/indefinite.jpg"/>
       <link href="https://m-delcambre.deviantart.com/art/Give-the-power-Cinematic-636055290"/>
-      <attribution>(CC BY-NC-ND) M-Delcambre</attribution>
+      <attribution>Image: “Give the Power” (CC BY-NC-ND) M-Delcambre</attribution>
       <color type="title">#e8b0b7</color>
       <color type="type">#b31b2e</color>
       <color type="duration">#e8b0b7</color>
-      <color type="attribution">#ffffff</color>
+      <color type="attribution">#b31b2e</color>
       <image type="title" src="/tmp/images/title-indefinite.png"/>
       <image type="duration-tab" src="/tmp/images/tab-indefinite.png"/><!-- this image has been vertically scaled to 1/6" from the source -->
       <text>until cured</text>
@@ -116,6 +116,26 @@
             <xsl:with-param name="duration" select="@duration"/>
             <xsl:with-param name="path">text</xsl:with-param>
           </xsl:call-template>
+        </fo:block>
+        <fo:block font-size="3pt" font-family="Cochin" text-align="end" font-style="italic" margin-right="0.25in" space-before="2pt">
+          <xsl:attribute name="color">
+            <xsl:call-template name="duration-value">
+              <xsl:with-param name="duration" select="@duration"/>
+              <xsl:with-param name="path">color[@type = 'attribution']</xsl:with-param>
+            </xsl:call-template>
+          </xsl:attribute>
+          <fo:basic-link>
+            <xsl:attribute name="external-destination">
+              url('<xsl:call-template name="duration-value">
+                <xsl:with-param name="duration" select="@duration"/>
+                <xsl:with-param name="path">link/@href</xsl:with-param>
+              </xsl:call-template>')
+            </xsl:attribute>
+            <xsl:call-template name="duration-value">
+              <xsl:with-param name="duration" select="@duration"/>
+              <xsl:with-param name="path">attribution</xsl:with-param>
+            </xsl:call-template>
+          </fo:basic-link>
         </fo:block>
       </fo:marker>
 
