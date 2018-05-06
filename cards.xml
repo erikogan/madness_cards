@@ -145,7 +145,7 @@
     <acting>Behave like the player who belongs to that character.</acting>
   </card>
   <card duration="Indefinite">
-    <title>I’m Only Interesting If I Tell Tall Tales</title>
+    <title shrink="true">I’m Only Interesting If I Tell Tall Tales</title>
     <description>
       <line>Bend the truth, exaggerate, or lie about everything.</line>
       <line>The more audacious the better.</line>
@@ -238,7 +238,7 @@
   </card>
   <card duration="Long">
     <title shrink="true">
-      My skin is now stone! My flesh rapidly heals!
+      Adventuring Under the Influence
     </title>
     <description>
       <line>You experience a powerful delusion.</line>
@@ -515,7 +515,8 @@
       adornments.
     </description>
     <acting>
-      Keep dice that rolled well as trophies. Try to collect both yours and others.
+      Keep dice that rolled well as trophies. Try to collect both yours and
+      others.
     </acting>
   </card>
   <card duration="Indefinite">
@@ -526,7 +527,8 @@
       compatriots will do in a pinch.
     </description>
     <acting>
-      How long can you go before the table realizes it’s a Hannibal impression?
+      How long can you go before the table realizes it’s a Hannibal Lecter
+      impression?
     </acting>
   </card>
   <card duration="Short">
