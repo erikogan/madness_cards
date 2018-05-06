@@ -153,7 +153,7 @@
                           height="1.55in">
         <xsl:attribute name="background-image">
           <xsl:choose>
-            <xsl:when test="acting">/tmp/images/paper_full.png</xsl:when>
+            <xsl:when test="acting">/tmp/images/paper_full.jpg</xsl:when>
             <xsl:otherwise>/tmp/images/parchment_full.png</xsl:otherwise>
           </xsl:choose>
         </xsl:attribute>
@@ -201,7 +201,7 @@
               background-position-horizontal="center"
               background-position-vertical="bottom">
       <xsl:attribute name="background-image">
-        <xsl:if test="../acting">/tmp/images/parchment_half.png</xsl:if>
+        <xsl:if test="../acting">/tmp/images/parchment_full.png</xsl:if>
       </xsl:attribute>
       <fo:block margin="4pt">
         <xsl:apply-templates />
