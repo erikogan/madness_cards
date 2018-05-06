@@ -18,9 +18,9 @@
       <link href="https://cyliondraw.deviantart.com/art/Death-City-308883109"/>
       <attribution>© 2012-2018 CylionDraw</attribution>
       <color type="title">#b4d8a8</color>
-      <color type="type">#356d21</color>
+      <color type="type">#66a150</color>
       <color type="duration">#b4d8a8</color>
-      <color type="attribution">#18310f</color>
+      <color type="attribution">#356d21</color>
       <image type="title" src="/tmp/images/title-short.png"/>
       <image type="duration-tab" src="/tmp/images/tab-short.png"/><!-- this image has been vertically scaled to 1/6" from the source -->
       <text>1d10 rounds</text>
