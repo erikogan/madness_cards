@@ -80,6 +80,7 @@
         </fo:static-content>
         <fo:flow flow-name="xsl-region-body">
           <xsl:apply-templates select="cards/card[not(@enabled) or @enabled != 'false']" />
+          <!-- <xsl:apply-templates select="cards/card[@example]"/> -->
         </fo:flow>
       </fo:page-sequence>
     </fo:root>

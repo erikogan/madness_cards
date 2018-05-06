@@ -24,7 +24,7 @@
     </description>
     <acting>Sit as still as possible without speaking for the duration.</acting>
   </card>
-  <card duration="Long">
+  <card duration="Long" example="true">
     <title>Slow Motion</title>
     <description>
       You feel incredibly sluggish. Your movement speed is halved (round down),
@@ -426,7 +426,7 @@
       <line>During this time you are incapacitated.</line>
     </description>
   </card>
-  <card duration="Short">
+  <card duration="Short" example="true">
     <title>Zoiks!</title>
     <description>
       <line>
@@ -519,7 +519,7 @@
       others.
     </acting>
   </card>
-  <card duration="Indefinite">
+  <card duration="Indefinite" example="true">
     <title>A Nice Chianti</title>
     <description>
       The flesh of intelligent creatures is delicious! You feel an
