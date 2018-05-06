@@ -157,6 +157,31 @@
             <xsl:otherwise>/tmp/images/parchment_full.png</xsl:otherwise>
           </xsl:choose>
         </xsl:attribute>
+        <xsl:attribute name="background-position-horizontal">
+          <xsl:choose>
+            <xsl:when test="not(acting)">center</xsl:when>
+            <xsl:otherwise>
+              <xsl:choose>
+                <xsl:when test="(position() mod 9) &gt;= 0 and (position() mod 9) &lt;= 2">left</xsl:when>
+                <xsl:when test="(position() mod 9) &gt;= 3 and (position() mod 9) &lt;= 5">center</xsl:when>
+                <xsl:otherwise>right</xsl:otherwise>
+              </xsl:choose>
+            </xsl:otherwise>
+          </xsl:choose>
+        </xsl:attribute>
+
+        <xsl:attribute name="background-position-vertical">
+          <xsl:choose>
+            <xsl:when test="not(acting)">top</xsl:when>
+            <xsl:otherwise>
+              <xsl:choose>
+                <xsl:when test="(position() mod 3) = 0">top</xsl:when>
+                <xsl:when test="(position() mod 3) = 1">center</xsl:when>
+                <xsl:otherwise>bottom</xsl:otherwise>
+              </xsl:choose>
+            </xsl:otherwise>
+          </xsl:choose>
+        </xsl:attribute>
         <xsl:apply-templates select="description" />
         <xsl:apply-templates select="acting" />
       </fo:block-container>
