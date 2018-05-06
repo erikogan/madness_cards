@@ -233,7 +233,8 @@
     <title>Disgusting! Keep That Away!</title>
     <description>
       You find something (of your choice, but usually the source of your
-      madness) incredibly revolting, as if affected by the Antipathy spell.
+      madness) incredibly revolting, as if affected by the
+      <strong>Antipathy</strong> spell.
     </description>
   </card>
   <card duration="Long">
@@ -252,7 +253,7 @@
     <title>My, This Must Be Lucky!</title>
     <description>
       You become attached to a non-combat item of your choice. You suffer
-      disadvantage on attack rolls, ability checks, and saving throws when over
+      Disadvantage on attack rolls, ability checks, and saving throws when over
       30' away from it.
     </description>
     <acting>
@@ -263,10 +264,11 @@
   <card duration="Long">
     <title>I Can’t Hear! I Can’t See!</title>
     <description>
-      Roll a d4. On a 1, you are blinded. Any other roll, you are deafened.
+      Roll a d4. On a 1, you are <strong>Blinded</strong>. Otherwise, you are
+      <strong>Deafened</strong>.
     </description>
     <acting>
-      If you are blinded, close your eyes and play blind! If you are deafened,
+      If you are Blinded, close your eyes and play blind! If you are Deafened,
       don’t listen to anyone other than the DM.
     </acting>
   </card>
@@ -421,9 +423,14 @@
     <title>That’s <em>Hilarious!</em></title>
     <description>
       <line>
-        You must keep laughing (At least when acknowledged) for the duration.
+        You are under an effect similar to <strong>Tasha’s Hideous
+        Laughter</strong>, but you make the saving throw at the
+        <em>beginning</em> of <em>each</em> turn.
+     </line>
+      <line>
+        You may act only if you succeed, otherwise you are incapacitated by
+        laughter.
       </line>
-      <line>During this time you are incapacitated.</line>
     </description>
   </card>
   <card duration="Short" example="true">
@@ -434,7 +441,7 @@
         there.
       </line>
       <line>Pretty much everything.</line>
-      <line>You are Frightened for the duration.</line>
+      <line>You are <strong>Frightened</strong> for the duration.</line>
     </description>
     <acting>Jump in fear (and maybe shout too!) if someone acknowledges you.</acting>
   </card>

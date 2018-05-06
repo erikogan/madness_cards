@@ -326,6 +326,12 @@
     </fo:inline>
   </xsl:template>
 
+  <xsl:template match="strong">
+    <fo:inline font-weight="bold">
+      <xsl:apply-templates/>
+    </fo:inline>
+  </xsl:template>
+
   <xsl:template name="duration-value">
     <xsl:param name="duration"/>
     <xsl:param name="path" />
