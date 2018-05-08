@@ -14,9 +14,9 @@ png: cards/card-01.png
 	fop -c $< $*.fo $@
 
 # For some reason this XSLT causes a NPE in fop/xalan.
-# Also Xalan has a bug that prevents the duration-value template from working.
+# Also Xalan has a bug that prevents the duration-value eval template from working.
 %.fo: %-fo.xsl %.xml
-	xsltproc -o $@ $< $(filter-out $<, $^)
+	xsltproc -o $@ $< $*.xml
 
 cards/%.png: cards.pdf
 	mkdir -p cards
