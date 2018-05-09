@@ -20,9 +20,9 @@ png: cards/card-01.png
 
 cards/%.png: cards.pdf
 	mkdir -p cards
-	gs -dNumRenderingThreads=$(THREADS) -dSAFER -dBATCH -dNOPAUSE -dNOPROMPT \
-		-dMaxBitmap=$(GS_BITMAP) -dAlignToPixels=0 -dGridFitTT=2 -sDEVICE=pngalpha \
-		-dTextAlphaBits=4 -dGraphicsAlphaBits=4 -r$(PNG_DPI)x$(PNG_DPI) \
+	gs -dBGPrint=true -dNumRenderingThreads=$(PNG_THREADS) -dSAFER -dBATCH -dNOPAUSE \
+		-dNOPROMPT -dMaxBitmap=$(GS_BITMAP) -dAlignToPixels=0 -dGridFitTT=2 \
+		-sDEVICE=png16m -dTextAlphaBits=4 -dGraphicsAlphaBits=4 -r$(PNG_DPI)x$(PNG_DPI) \
 		-sOutputFile=cards/card-%02d.png -c '$(GS_MEMORY) setvmthreshold' -fcards.pdf
 
 clean:
