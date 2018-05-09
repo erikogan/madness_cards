@@ -8,7 +8,6 @@
 
   <xsl:strip-space elements="*"/>
 
-
 <!-- Comedy/Tragedy attribution -->
 <!-- By Booyabazooka on English Wikipedia, he:משתמש:נעמה מ on Hebrew Wikipedia, edited by The Anome to remove background ellipse and balance positions of images within frame - Modified from <a href="//commons.wikimedia.org/wiki/File:Teatro.svg" title="File:Teatro.svg">Teatro.svg</a>:&nbsp;<a href="//commons.wikimedia.org/wiki/File:Teatro.svg" class="image"></a>, <a href="https://creativecommons.org/licenses/by-sa/3.0" title="Creative Commons Attribution-Share Alike 3.0">CC BY-SA 3.0</a>, <a href="https://commons.wikimedia.org/w/index.php?curid=54724150">Link</a> -->
 
@@ -27,7 +26,7 @@
     </duration>
     <duration name="Long">
       <image type="main" src="/tmp/images/long.png"/>
-      <link href="https://skyrawathi.deviantart.com/art/Devil-2-642641650"/>
+      <link href="https://www.artstation.com/alexineskiba"/>
       <attribution>Image: “Devil 2” © 2016-2018 Skyrawathi</attribution>
       <color type="title">#d9caab</color>
       <color type="type">#d9caab</color>
@@ -40,7 +39,7 @@
     <duration name="Indefinite">
       <image type="main" src="/tmp/images/indefinite.jpg"/>
       <link href="https://m-delcambre.deviantart.com/art/Give-the-power-Cinematic-636055290"/>
-      <attribution>Image: “Give the Power” (CC BY-NC-ND) M-Delcambre</attribution>
+      <attribution>Image: “Give the Power” by M-Delcambre (CC BY-NC-ND 3.0)</attribution>
       <color type="title">#e8b0b7</color>
       <color type="type">#b31b2e</color>
       <color type="duration">#e8b0b7</color>

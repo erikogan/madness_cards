@@ -13,7 +13,7 @@ as inspiration, these cards have been reedited, reformatted, and reimagined.
   <dt><strong>Short-Term Madness</strong></dt>
   <dd><a href="https://cyliondraw.deviantart.com/art/Death-City-308883109">“Death City” © 2012-2018 CylionDraw</a></dd>
   <dt><strong>Long-Term Madness</strong></dt>
-  <dd><a href="https://skyrawathi.deviantart.com/art/Devil-2-642641650">“Devil 2” © 2016-2018 Skyrawathi</a></dd>
+  <dd><a href="https://www.artstation.com/alexineskiba">“Devil 2” © 2016-2018 Skyrawathi</a></dd>
   <dt><strong>Indefinite Madness</strong></dt>
   <dd>
     <a href="https://m-delcambre.deviantart.com/art/Give-the-power-Cinematic-636055290">“Give
