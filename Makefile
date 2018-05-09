@@ -1,10 +1,10 @@
-PNG_DPI=1200
+PNG_DPI ?= 1200
 # I don’t think this works
-THREADS=8
+PNG_THREADS ?= 8
 
 # 512 MB
-GS_MEMORY=536870912
-GS_BITMAP=$(GS_MEMORY)
+GS_MEMORY ?= 536870912
+GS_BITMAP ?= $(GS_MEMORY)
 
 all: cards.pdf
 # For now just add a prerequisite of the first page, all of them will be created
