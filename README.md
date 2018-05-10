@@ -39,7 +39,7 @@ To build a PDF of the cards requires
 [xsltproc](http://xmlsoft.org/XSLT/xsltproc2.html) from libxstl2, [Apache FOP
 2.x](https://xmlgraphics.apache.org/fop/), and [ImageMagick](https://www.imagemagick.org)
 
-To also build PNG files requires [Ghostscript](https://www.ghostscript.com/).
+PNG files are built from the PDF, and also require [Ghostscript](https://www.ghostscript.com/).
 
 My own PDFs use the Cochin typeface.
 
