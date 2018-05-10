@@ -6,6 +6,8 @@ PNG_THREADS ?= 8
 GS_MEMORY ?= 536870912
 GS_BITMAP ?= $(GS_MEMORY)
 
+PWD ?= $(shell pwd)
+
 all: cards.pdf
 # For now just add a prerequisite of the first page, all of them will be created
 png: cards/card-01.png
@@ -16,7 +18,7 @@ png: cards/card-01.png
 # For some reason this XSLT causes a NPE in fop/xalan.
 # Also Xalan has a bug that prevents the duration-value eval template from working.
 %.fo: %-fo.xsl %.xml
-	xsltproc -o $@ $< $*.xml
+	xsltproc --stringparam image_root "$(PWD)" -o $@ $< $*.xml
 
 cards/%.png: cards.pdf
 	mkdir -p cards

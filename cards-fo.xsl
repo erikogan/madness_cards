@@ -8,44 +8,46 @@
 
   <xsl:strip-space elements="*"/>
 
+  <xsl:param name="image_root" select="'Define image_root, image paths need to be fully-qualified'"/>
+
 <!-- Comedy/Tragedy attribution -->
 <!-- By Booyabazooka on English Wikipedia, he:משתמש:נעמה מ on Hebrew Wikipedia, edited by The Anome to remove background ellipse and balance positions of images within frame - Modified from <a href="//commons.wikimedia.org/wiki/File:Teatro.svg" title="File:Teatro.svg">Teatro.svg</a>:&nbsp;<a href="//commons.wikimedia.org/wiki/File:Teatro.svg" class="image"></a>, <a href="https://creativecommons.org/licenses/by-sa/3.0" title="Creative Commons Attribution-Share Alike 3.0">CC BY-SA 3.0</a>, <a href="https://commons.wikimedia.org/w/index.php?curid=54724150">Link</a> -->
 
   <xsl:variable name="durations">
     <duration name="Short">
-      <image type="main" src="/tmp/images/short.jpg"/>
+      <image type="main" src="images/short.jpg"/>
       <link href="https://cyliondraw.deviantart.com/art/Death-City-308883109"/>
       <attribution>Image: “Death City” © 2012-2018 CylionDraw</attribution>
       <color type="title">#b4d8a8</color>
       <color type="type">#66a150</color>
       <color type="duration">#b4d8a8</color>
       <color type="attribution">#356d21</color>
-      <image type="title" src="/tmp/images/title-short.png"/>
-      <image type="duration-tab" src="/tmp/images/tab-short.png"/><!-- this image has been vertically scaled to 1/6" from the source -->
+      <image type="title" src="images/title-short.png"/>
+      <image type="duration-tab" src="images/tab-short.png"/><!-- this image has been vertically scaled to 1/6" from the source -->
       <text>1d10 rounds</text>
     </duration>
     <duration name="Long">
-      <image type="main" src="/tmp/images/long.png"/>
+      <image type="main" src="images/long.png"/>
       <link href="https://www.artstation.com/alexineskiba"/>
       <attribution>Image: “Devil 2” © 2016-2018 Skyrawathi</attribution>
       <color type="title">#d9caab</color>
       <color type="type">#d9caab</color>
       <color type="duration">#d9caab</color>
       <color type="attribution">#ab9873</color>
-      <image type="title" src="/tmp/images/title-long.png"/>
-      <image type="duration-tab" src="/tmp/images/tab-long.png"/><!-- this image has been vertically scaled to 1/6" from the source -->
+      <image type="title" src="images/title-long.png"/>
+      <image type="duration-tab" src="images/tab-long.png"/><!-- this image has been vertically scaled to 1/6" from the source -->
       <text>one session</text>
     </duration>
     <duration name="Indefinite">
-      <image type="main" src="/tmp/images/indefinite.jpg"/>
+      <image type="main" src="images/indefinite.jpg"/>
       <link href="https://m-delcambre.deviantart.com/art/Give-the-power-Cinematic-636055290"/>
       <attribution>Image: “Give the Power” by M-Delcambre (CC BY-NC-ND 3.0)</attribution>
       <color type="title">#e8b0b7</color>
       <color type="type">#b31b2e</color>
       <color type="duration">#e8b0b7</color>
       <color type="attribution">#b31b2e</color>
-      <image type="title" src="/tmp/images/title-indefinite.png"/>
-      <image type="duration-tab" src="/tmp/images/tab-indefinite.png"/><!-- this image has been vertically scaled to 1/6" from the source -->
+      <image type="title" src="images/title-indefinite.png"/>
+      <image type="duration-tab" src="images/tab-indefinite.png"/><!-- this image has been vertically scaled to 1/6" from the source -->
       <text>until cured</text>
     </duration>
   </xsl:variable>
@@ -55,7 +57,7 @@
   <xsl:variable name="rules-size">8pt</xsl:variable>
   <xsl:variable name="duration-size">6pt</xsl:variable>
 
-  <xsl:variable name="acting-image-source">/tmp/images/Comedy_and_tragedy_masks_without_background.svg</xsl:variable>
+  <xsl:variable name="acting-image-source"><xsl:value-of select="$image_root"/>/images/Comedy_and_tragedy_masks_without_background.svg</xsl:variable>
 
   <xsl:template match="/">
     <fo:root xmlns:fo="http://www.w3.org/1999/XSL/Format">
@@ -96,6 +98,7 @@
             <xsl:call-template name="duration-value">
               <xsl:with-param name="duration" select="@duration"/>
               <xsl:with-param name="path">image[@type = 'duration-tab']/@src</xsl:with-param>
+              <xsl:with-param name="image">true</xsl:with-param>
             </xsl:call-template>
           </xsl:attribute>
           <xsl:attribute name="margin-top">
@@ -145,6 +148,7 @@
             <xsl:call-template name="duration-value">
               <xsl:with-param name="duration" select="@duration"/>
               <xsl:with-param name="path">image[@type = 'main']/@src</xsl:with-param>
+              <xsl:with-param name="image">true</xsl:with-param>
             </xsl:call-template>
           </xsl:attribute>
         </fo:external-graphic>
@@ -173,8 +177,8 @@
                           height="1.55in">
         <xsl:attribute name="background-image">
           <xsl:choose>
-            <xsl:when test="acting">/tmp/images/paper_full.jpg</xsl:when>
-            <xsl:otherwise>/tmp/images/parchment_full.png</xsl:otherwise>
+            <xsl:when test="acting"><xsl:value-of select="$image_root"/>/images/paper_full.jpg</xsl:when>
+            <xsl:otherwise><xsl:value-of select="$image_root"/>/images/parchment_full.png</xsl:otherwise>
           </xsl:choose>
         </xsl:attribute>
         <xsl:attribute name="background-position-horizontal">
@@ -232,6 +236,7 @@
           <xsl:call-template name="duration-value">
             <xsl:with-param name="duration" select="../@duration"/>
             <xsl:with-param name="path">image[@type = 'title']/@src</xsl:with-param>
+            <xsl:with-param name="image">true</xsl:with-param>
           </xsl:call-template>
         </xsl:attribute>
         <xsl:apply-templates />
@@ -246,7 +251,7 @@
               background-position-horizontal="center"
               background-position-vertical="bottom">
       <xsl:attribute name="background-image">
-        <xsl:if test="../acting">/tmp/images/parchment_full.png</xsl:if>
+        <xsl:if test="../acting"><xsl:value-of select="$image_root"/>/images/parchment_full.png</xsl:if>
       </xsl:attribute>
       <fo:block margin="4pt">
         <xsl:apply-templates />
@@ -334,7 +339,8 @@
   <xsl:template name="duration-value">
     <xsl:param name="duration"/>
     <xsl:param name="path" />
+    <xsl:param name="image" />
     <xsl:variable name="value-query">document('')//xsl:variable[@name='durations']/duration[@name = '<xsl:value-of select="$duration"/>']/<xsl:value-of select="$path"/></xsl:variable>
-    <xsl:value-of select="dyn:evaluate($value-query)"/>
+    <xsl:if test="$image"><xsl:value-of select="$image_root"/>/</xsl:if><xsl:value-of select="dyn:evaluate($value-query)"/>
   </xsl:template>
 </xsl:stylesheet>
