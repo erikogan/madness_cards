@@ -34,8 +34,8 @@ as inspiration, these cards have been reedited, reformatted, and reimagined.
 ## Prerequisites
 
 To build a PDF of the cards requires
-[xsltproc](http://xmlsoft.org/XSLT/xsltproc2.html) from libxstl2, and [Apache
-FOP 2.x](https://xmlgraphics.apache.org/fop/).
+[xsltproc](http://xmlsoft.org/XSLT/xsltproc2.html) from libxstl2, [Apache FOP
+2.x](https://xmlgraphics.apache.org/fop/), and [ImageMagick](https://www.imagemagick.org)
 
 To also build PNG files requires [Ghostscript](https://www.ghostscript.com/).
 
@@ -48,9 +48,9 @@ I strongly recommend installation via [Homebrew](https://brew.sh).
 1. make and xsltproc are included in the
    [Command-Line Tools for Xcode](https://developer.apple.com/download/more/),
    which you’ll also need for Homebrew.
-1. `brew install fop`
+1. `brew install fop imagemagick`
 1. If you want to make PNGs `brew install ghostscript` _or_ combined into a
-   single command: `brew install fop ghostscript`
+   single command: `brew install fop imagemagick ghostscript`
 
 #### Fonts
 
@@ -63,7 +63,7 @@ via Homebrew if you change the shebang to use `python2.7` instead of `python3`.
 
 1. [RHEL/CentOS only:] In order to install FOP you’ll need EPEL installed if you
    don’t already have it: `yum install -y epel-release`.
-1. `yum install -y make libxslt fop`
+1. `yum install -y make libxslt ImageMagick fop`
 1. If you want to make PNGs: `brew install -y ghostscript`
 
 **RHEL / CentOS Note:** At the time of this writing EPEL installs fop-1.1 and
@@ -73,7 +73,7 @@ am not explicitly testing on 1.1.
 
 ### Debian / Ubuntu
 
-1. `apt-get install -y fop xsltproc`
+1. `apt-get install -y fop imagemagick xsltproc`
 1. If you want to make PNGs: `install -y ghostscript`
 
 ### Windows
