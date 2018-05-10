@@ -9,6 +9,8 @@ as inspiration, these cards have been reedited, reformatted, and reimagined.
 
 ## Artwork
 
+Thanks to the artists whose work made this project possible:
+
 <dl>
   <dt><strong>Short-Term Madness</strong></dt>
   <dd><a href="https://cyliondraw.deviantart.com/art/Death-City-308883109">“Death City” © 2012-2018 CylionDraw</a></dd>
