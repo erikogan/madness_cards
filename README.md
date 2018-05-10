@@ -90,9 +90,10 @@ am not explicitly testing on 1.1.
 
 ### Windows
 
-No idea, sorry. FOP is Java-based, so you should be able to download and run it
-once you have Java installed. And I believe libxslt & ghostscript have
-provisions for installing on Windows, though they may or may not require Cygwin.
+No idea, sorry. FOP is Java-based, so you should be able to download and run
+it once you have Java installed. I know ImageMagick has Windows support, and I
+believe libxslt2 & ghostscript have provisions for installing on Windows,
+though they may or may not require Cygwin.
 
 If someone with a Windows box gets it working, I’d love a docs PR.
 
@@ -188,7 +189,7 @@ documenting by example:
 
 ```xml
 <card duration="Short|Long|Indefinite">
-  <title shrink="optional: if present, shrinks the text to try to fit it on one line. Use sparingly.">
+  <title shrink="optional attribute: if present, shrinks the text size to try to fit it on one line. Use sparingly.">
     The Title Goes Here and Is Shown At the Top of the Card (The Stylesheet Does
     Not Gracefully Handle Titles That Wrap, So Keep It Short!)
   </title>
@@ -202,10 +203,12 @@ documenting by example:
     </line>
     <line>Also: &lt;em&gt; and &lt;strong&lt; work as you might expect.</line>
   </description>
-  <acting tight="if this is present, the spacing is tightened up to try to help it fit in a tight space">
+  <acting tight="optional attribute: if present, the spacing is reduced up to try to help it fit when space is tight">
     This portion of the card is optional. If present, it appears below the
-    description, in the paper section, with a pair of Sock and Buskin Masks to
-    denote acting tips. This section can also include &lt;line&gt;s.
+    description, in the paper section, in italics, with a pair of Sock and
+    Buskin Masks to denote acting tips. This section can also include
+    &lt;line&gt;s. &lt;strong&gt; also works as expected, but &lt;em&gt;
+    romanizes and bolds the text.
   </acting>
 </card>
 ```
