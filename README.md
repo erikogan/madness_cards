@@ -33,6 +33,16 @@ Thanks to the artists whose work made this project possible:
   </dd>
 </dl>
 
+![Example of Each Type of Card](https://stealthymonkeys.com/i/example_madness_cards.jpg)
+
+## Downloads
+
+If you are happy to simply download my original release of the cards without
+updates or changes of your own, see the [original blog
+post](https://stealthymonkeys.com/2018/05/madness-cards-for-out-of-the-abyss).
+
+Otherwise, keep reading to build a copy yourself.
+
 ## Prerequisites
 
 To build a PDF of the cards requires
