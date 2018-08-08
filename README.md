@@ -7,6 +7,11 @@ Starting with [John Scott’s MS Word
 documents](https://drive.google.com/drive/folders/0B0Pt2Npati8kUDBDMGJpYXBjWVE)
 as inspiration, these cards have been reedited, reformatted, and reimagined.
 
+Many of the cards have acting tips for bringing the madness to life at the
+table as well as in the game.
+
+![Example of Each Type of Card](https://stealthymonkeys.com/i/example_madness_cards.jpg)
+
 ## Artwork
 
 Thanks to the artists whose work made this project possible:
@@ -32,8 +37,6 @@ Thanks to the artists whose work made this project possible:
     title="Creative Commons Attribution-Share Alike 3.0">CC BY-SA 3.0</a>.
   </dd>
 </dl>
-
-![Example of Each Type of Card](https://stealthymonkeys.com/i/example_madness_cards.jpg)
 
 ## Downloads
 
